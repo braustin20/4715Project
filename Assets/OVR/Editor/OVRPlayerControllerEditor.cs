@@ -56,9 +56,9 @@ public class OVRPlayerControllerEditor : Editor
 	public override void OnInspectorGUI()
 	{
 		GUI.color = Color.white;
-		
+		#pragma warning disable 0618
 		Undo.SetSnapshotTarget(m_Component, "OVRPlayerController");
-		
+		#pragma warning restore 0618
 		{
 			m_Component.Acceleration 	  = EditorGUILayout.Slider("Acceleration", 			m_Component.Acceleration, 	  0, 1);
 			m_Component.Damping 		  = EditorGUILayout.Slider("Damping", 				m_Component.Damping, 		  0, 1);
@@ -75,12 +75,14 @@ public class OVRPlayerControllerEditor : Editor
 		
 		if (GUI.changed)
 		{
+			#pragma warning disable 0618
 			Undo.CreateSnapshot();
 			Undo.RegisterSnapshot();
 			EditorUtility.SetDirty(m_Component);
 		}
 		
 		Undo.ClearSnapshotTarget();
+		#pragma warning restore 0618
 	}		
 }
 

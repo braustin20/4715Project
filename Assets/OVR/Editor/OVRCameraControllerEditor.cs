@@ -58,9 +58,9 @@ public class OVRCameraControllerEditor : Editor
 	public override void OnInspectorGUI()
 	{
 		GUI.color = Color.white;
-		
+		#pragma warning disable 0618
 		Undo.SetSnapshotTarget(m_Component, "OVRCameraController");
-
+		#pragma warning restore 0618
 		{
 #if CUSTOM_LAYOUT
 			OVREditorGUIUtility.Separator();			
@@ -110,12 +110,14 @@ public class OVRCameraControllerEditor : Editor
 
 		if (GUI.changed)
 		{
+			#pragma warning disable 0618
 			Undo.CreateSnapshot();
 			Undo.RegisterSnapshot();
 			EditorUtility.SetDirty(m_Component);
 		}
 		
 		Undo.ClearSnapshotTarget();
+		#pragma warning restore 0618
 	}		
 }
 
