@@ -4,7 +4,6 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 	public GameObject ovrCameraController;
 	public GameObject fpsCharacter;
-	private GameObject ovrCharacter;
 	private bool oculus;
 
 	
@@ -15,7 +14,6 @@ public class GameManager : MonoBehaviour {
 			Screen.showCursor = false;
 		}
 		oculus = false;
-		ovrCharacter = GameObject.FindGameObjectWithTag("Player");
 	}
 	
 	// Update is called once per frame
