@@ -50,8 +50,8 @@ GameObject:
   - 4: {fileID: 400012}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400018}
-  - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
   m_Layer: 8
   m_Name: OVRCharacterToggleable
   m_TagString: Player
@@ -71,7 +71,7 @@ GameObject:
   - 114: {fileID: 11400020}
   m_Layer: 8
   m_Name: OVRCameraController
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c9d00621babed4f89caadae861a22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
