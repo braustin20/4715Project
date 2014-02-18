@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: OVRCameraController
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ GameObject:
   - 81: {fileID: 8100000}
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400006}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CameraRight
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - 124: {fileID: 12400004}
   - 114: {fileID: 11400014}
   - 114: {fileID: 11400012}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: CameraLeft
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 114: {fileID: 11400016}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: OVRCharacterFlying
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - 4: {fileID: 400010}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
