@@ -14,9 +14,10 @@ public class Border : MonoBehaviour {
 	}
 	void OnTriggerStay(Collider other){
 		if(other.gameObject.tag == "Player"){
-			other.transform.parent.rigidbody.AddForce(this.transform.up * 10.0f);
+			Rigidbody playerRigidbody = other.transform.parent.rigidbody;
+			playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, 0, playerRigidbody.velocity.z);
+			other.transform.parent.rigidbody.AddForce(this.transform.up * 20.0f);
 
-			//other.rigidbody.AddForce(this.transform.forward * 10.0f);
 		}
 	}
 }
