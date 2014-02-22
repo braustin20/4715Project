@@ -432,7 +432,6 @@ GameObject:
   - 4: {fileID: 225980993}
   - 33: {fileID: 225980992}
   - 23: {fileID: 225980991}
-  - 95: {fileID: 225980990}
   m_Layer: 0
   m_Name: earthfinal
   m_TagString: Untagged
@@ -440,21 +439,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &225980990
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: b55673de444984152b8e9530b836d96d,
-    type: 3}
-  m_PrefabInternal: {fileID: 493027310}
-  m_GameObject: {fileID: 225980989}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: b55673de444984152b8e9530b836d96d, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
 --- !u!23 &225980991
 Renderer:
   m_ObjectHideFlags: 0
@@ -953,6 +937,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999557078
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e378451332860fe40a1237358cbaa967, type: 2}
+      propertyPath: maxSpeed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e378451332860fe40a1237358cbaa967, type: 2}
   m_RootGameObject: {fileID: 1365844477}
@@ -1130,7 +1118,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 62.7291908
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: b55673de444984152b8e9530b836d96d, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: b55673de444984152b8e9530b836d96d, type: 3}
   m_RootGameObject: {fileID: 225980989}
   m_IsPrefabParent: 0
@@ -3073,7 +3062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
-  maxSpeed: 7
+  maxSpeed: 4
   jumpForce: 500
 --- !u!54 &1365844481
 Rigidbody:

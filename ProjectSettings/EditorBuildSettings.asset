@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/flyingPrototype.unity
+    path: Assets/Scenes/Prototypes/flyingPrototype.unity
   - enabled: 1
-    path: Assets/Scenes/floatPrototype.unity
+    path: Assets/Scenes/Prototypes/floatPrototype.unity
   - enabled: 1
-    path: Assets/Scenes/stationPrototype.unity
+    path: Assets/Scenes/Prototypes/stationPrototype.unity
