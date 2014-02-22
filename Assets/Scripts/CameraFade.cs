@@ -1,9 +1,4 @@
-﻿
-// simple fading script
-// A texture is stretched over the entire screen. The color of the pixel is set each frame until it reaches its target color.
-
-//Found on Wiki Unity
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class CameraFade : MonoBehaviour
@@ -22,7 +17,7 @@ public class CameraFade : MonoBehaviour
 	private int m_FadeGUIDepth = -1000;								
 	public bool isFading = false;
 	public float loadTimer = 0.0f;
-	public float fadeTime = 10.0f;
+	public float fadeTime = 2.0f;
 	
 	// initialize the texture, background-style and initial color:
 	private void Awake()
@@ -41,7 +36,7 @@ public class CameraFade : MonoBehaviour
 		if(isFading == true){
 			loadTimer += Time.deltaTime;
 		}
-		if(loadTimer > fadeTime - 6.0f){
+		if(loadTimer > fadeTime){
 			Debug.Log ("Fading Complete");
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
