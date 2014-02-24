@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 		OVRCamera = GameObject.Find("OVRCameraController");
 		FPSCamera = GameObject.Find("FPS Character");
 
-		if(Application.isPlaying && !Application.isWebPlayer){
+		if(Application.isPlaying && !Application.isEditor){
 			Screen.showCursor = false;
 			Screen.lockCursor = true;
 		}
