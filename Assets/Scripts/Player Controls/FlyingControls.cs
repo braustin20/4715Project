@@ -37,11 +37,14 @@ public class FlyingControls : MonoBehaviour {
 		//Before any Input is processed, check to see if Oculus is enabled
 		oculusEnabled = gameManager.isOculusEnabled();
 
-		//Input grabbing - moves relative to current camera
-		if(Input.GetKey(KeyCode.W) && !checkMaxSpeed()){
+		//Input grabbing - doesn't move relative to current camera
+		if(Input.GetKey(KeyCode.LeftShift) && !checkMaxSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * moveSpeed);
 		}
-		if(Input.GetKey(KeyCode.S) && !checkMinSpeed()){
+		if(!Input.GetKey(KeyCode.LeftShift) && !checkMinSpeed()){
+			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * moveSpeed);
+		}
+		if(Input.GetKey(KeyCode.LeftControl) && !checkMinSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * moveSpeed);
 		}
 		if(Input.GetKey(KeyCode.A)){
@@ -50,10 +53,10 @@ public class FlyingControls : MonoBehaviour {
 		if(Input.GetKey(KeyCode.D)){
 			rigidbody.AddForce(new Vector3(1.0f, 0, 0) * moveSpeed);
 		}
-		if(Input.GetKey(KeyCode.E)){
+		if(Input.GetKey(KeyCode.W)){
 			rigidbody.AddForce(new Vector3(0, 1.0f, 0) * moveSpeed);
 		}
-		if(Input.GetKey(KeyCode.Q)){
+		if(Input.GetKey(KeyCode.S)){
 			rigidbody.AddForce(new Vector3(0, -1.0f, 0) * moveSpeed);
 		}
 	}
@@ -62,11 +65,13 @@ public class FlyingControls : MonoBehaviour {
 		//If we exceed the maximum speed, determine velocity direction and lock it
 		if(checkMaxSpeed()){
 			Debug.Log("Speed too high: " + tempVelocity.z);
-			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * maxSpeed);
+			rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, (1.0f * maxSpeed));
+			//rigidbody.AddForce(new Vector3(0, 0, 1.0f) * maxSpeed);
 		}  
 		if(checkMinSpeed()){
 			Debug.Log("Speed not sufficient: " + tempVelocity.z);
-			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * minSpeed);
+			rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, (1.0f * minSpeed));
+			//rigidbody.AddForce(new Vector3(0, 0, 1.0f) * minSpeed);
 		}
 	}
 	private bool checkMaxSpeed(){

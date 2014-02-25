@@ -14,7 +14,7 @@ public class Debris : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other){
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Ship"){
 			GameObject.Instantiate(explosionEffect, this.transform.position, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
 		}

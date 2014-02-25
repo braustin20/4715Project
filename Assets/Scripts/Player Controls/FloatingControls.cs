@@ -13,6 +13,8 @@ public class FloatingControls : MonoBehaviour {
 	public float maxSpeed = 7.0f;
 	public float jumpForce = 500.0f;
 
+	public float oxygen = 5.0f;
+
 	private float currentSpeed;
 
 	// Use this for initialization
@@ -32,6 +34,11 @@ public class FloatingControls : MonoBehaviour {
 
 		//Before any Input is processed, check to see if Oculus is enabled
 		oculusEnabled = gameManager.isOculusEnabled();
+
+		oxygen -= Time.deltaTime;
+		if(oxygen <= 0.0f){
+			Application.LoadLevel(Application.loadedLevel);
+		}
 
 		//Input grabbing - moves relative to current camera
 		if(Input.GetKey(KeyCode.W) && allowJetpack){

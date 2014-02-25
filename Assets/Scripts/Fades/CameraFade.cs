@@ -99,7 +99,7 @@ public class CameraFade : MonoBehaviour
 
 	public void OnTriggerEnter(Collider other){
 
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" || other.gameObject.tag == "Ship"){
 			Debug.Log ("Fade Started");
 			StartFade (Color.black, fadeTime);
 			isFading = true;

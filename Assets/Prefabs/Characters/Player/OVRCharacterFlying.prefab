@@ -260,7 +260,7 @@ GameObject:
   - 65: {fileID: 6500000}
   m_Layer: 0
   m_Name: Cockpit
-  m_TagString: Player
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  maxSpeed: 15
+  maxSpeed: 10
   minSpeed: 7
 --- !u!114 &11400002
 MonoBehaviour:
@@ -877,8 +877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axes: 0
-  sensitivityX: 15
-  sensitivityY: 15
+  sensitivityX: 5
+  sensitivityY: 5
   minimumX: -360
   maximumX: 360
   minimumY: -60

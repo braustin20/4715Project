@@ -13,7 +13,7 @@ public class Border : MonoBehaviour {
 	
 	}
 	void OnTriggerStay(Collider other){
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" || other.gameObject.tag == "Ship"){
 			Debug.Log(transform.up.normalized);
 			if(transform.up.normalized.y != 0.0f){
 				Rigidbody playerRigidbody = other.transform.parent.rigidbody;
