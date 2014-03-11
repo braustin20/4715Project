@@ -348,6 +348,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxSpeed: 7
   jumpForce: 500
+  oxygen: 500
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
