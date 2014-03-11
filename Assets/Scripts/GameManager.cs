@@ -17,8 +17,9 @@ public class GameManager : MonoBehaviour {
 			Screen.showCursor = false;
 			Screen.lockCursor = true;
 		}
-
-		OVRCamera.SetActive(false);
+		if(OVRCamera != null){
+			OVRCamera.SetActive(false);
+		}
 		oculus = false;
 	}
 	
