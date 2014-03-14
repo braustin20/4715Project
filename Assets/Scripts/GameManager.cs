@@ -3,20 +3,23 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 	private GameObject OVRCamera;
-
 	private GameObject FPSCamera;
+
 	private bool oculus;
 
 	
 	// Use this for initialization
 	void Start () {
+		//Find the two kinds of cameras
 		OVRCamera = GameObject.Find("OVRCameraController");
 		FPSCamera = GameObject.Find("FPS Character");
 
+		//If this is a build of the game, hide and lock the cursor
 		if(Application.isPlaying && !Application.isEditor){
 			Screen.showCursor = false;
 			Screen.lockCursor = true;
 		}
+		//If the OVR Camera is present, make sure it is disabled at the start
 		if(OVRCamera != null){
 			OVRCamera.SetActive(false);
 		}
@@ -31,12 +34,14 @@ public class GameManager : MonoBehaviour {
 				oculus = false;
 				OVRCamera.gameObject.SetActive(false);
 				FPSCamera.gameObject.SetActive(true);
+				OVRCamera.GetComponent<MouseLook>().enabled = false;
 			}
 			else if(oculus == false){
 				oculus = true;
 				
 				OVRCamera.gameObject.SetActive(true);
 				FPSCamera.gameObject.SetActive(false);
+				OVRCamera.GetComponent<MouseLook>().enabled = true;
 			}
 		}
 		if(oculus == true){
@@ -50,6 +55,7 @@ public class GameManager : MonoBehaviour {
 			Application.Quit();
 		}
 	}
+	//------Getters and Setters-----
 	public bool isOculusEnabled(){
 		return oculus;
 	}

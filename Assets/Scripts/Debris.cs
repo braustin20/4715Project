@@ -14,8 +14,10 @@ public class Debris : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other){
+		//If this debris collided with the ship explode and destroy this debris
 		if(other.gameObject.tag == "Ship"){
-			GameObject.Instantiate(explosionEffect, this.transform.position, this.transform.rotation);
+			//Place the explosion in front of the ship by 3 units
+			GameObject.Instantiate(explosionEffect, other.transform.position + Vector3.forward * 3, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
 		}
 	}
