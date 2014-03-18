@@ -34,14 +34,18 @@ public class GameManager : MonoBehaviour {
 				oculus = false;
 				OVRCamera.gameObject.SetActive(false);
 				FPSCamera.gameObject.SetActive(true);
-				OVRCamera.GetComponent<MouseLook>().enabled = false;
+				if(OVRCamera.GetComponent<MouseLook>() != null){
+					OVRCamera.GetComponent<MouseLook>().enabled = false;
+				}
 			}
 			else if(oculus == false){
 				oculus = true;
 				
 				OVRCamera.gameObject.SetActive(true);
 				FPSCamera.gameObject.SetActive(false);
-				OVRCamera.GetComponent<MouseLook>().enabled = true;
+				if(OVRCamera.GetComponent<MouseLook>() != null){
+					OVRCamera.GetComponent<MouseLook>().enabled = true;
+				}
 			}
 		}
 		if(oculus == true){
