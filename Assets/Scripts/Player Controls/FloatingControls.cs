@@ -13,9 +13,8 @@ public class FloatingControls : MonoBehaviour {
 	public float maxSpeed = 7.0f;
 	public float jumpForce = 500.0f;
 
-	public float oxygen = 10.0f;
+	public float oxygen = 120.0f;
 	private float maxOxygen;
-	private float drainSpeed = 2.0f;
 
 	private float currentSpeed;
 
