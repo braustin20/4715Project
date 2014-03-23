@@ -1680,6 +1680,10 @@ Prefab:
       propertyPath: follow
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
+      propertyPath: radius
+      value: 4900
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
   m_RootGameObject: {fileID: 483060425}
@@ -2271,7 +2275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887d94c6444e6e64e8139e94c45da96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 800
+  radius: 4900
   segments: 32
   shape: 0
   skybox: {fileID: 2100000, guid: 72ed8557bd5924343b59919fd35ed32b, type: 2}
@@ -3874,7 +3878,7 @@ Transform:
   m_GameObject: {fileID: 878143933}
   m_LocalRotation: {x: -7.5755558e-19, y: -.713265657, z: 7.5755558e-19, w: .700893819}
   m_LocalPosition: {x: 1.0207454, y: 2.30763769, z: 1.26184475}
-  m_LocalScale: {x: 1, y: 1, z: .525647581}
+  m_LocalScale: {x: 1, y: 1, z: .525647521}
   m_Children:
   - {fileID: 1191109229}
   m_Father: {fileID: 940893309}
@@ -7444,7 +7448,7 @@ Transform:
   m_GameObject: {fileID: 1820991590}
   m_LocalRotation: {x: -.43105641, y: -.0427068509, z: .0558671355, w: .899580657}
   m_LocalPosition: {x: .664001822, y: 2.1870563, z: 1.48967683}
-  m_LocalScale: {x: 1.3172394, y: 1.3172394, z: 1.3172394}
+  m_LocalScale: {x: 1.3172394, y: 1.31723928, z: 1.3172394}
   m_Children:
   - {fileID: 1272419144}
   m_Father: {fileID: 940893309}
