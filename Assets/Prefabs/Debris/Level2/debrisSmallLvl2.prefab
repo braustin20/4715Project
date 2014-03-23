@@ -211,11 +211,7 @@ GameObject:
   - 82: {fileID: 8200000}
   m_Layer: 0
   m_Name: debrisSmallLvl2
-<<<<<<< HEAD
   m_TagString: Untagged
-=======
-  m_TagString: Debris
->>>>>>> FETCH_HEAD
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 100000, guid: d336610c1a70c484cbcb8aae9d58302f, type: 2}
-  killTime: 1
+  killTime: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

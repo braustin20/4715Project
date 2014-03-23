@@ -3778,9 +3778,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debris:
-  - {fileID: 100142, guid: 3837ae975bcf0284bba536b823be22d2, type: 2}
-  - {fileID: 100074, guid: 9763a78a9acf85c46ac7cc3d1cfbeba5, type: 2}
-  - {fileID: 100026, guid: 86f702679569dd1448bc7720d4b9d7e6, type: 2}
+  - {fileID: 100142, guid: e38394fe30f4a244fa8c4c72015ed584, type: 2}
+  - {fileID: 100074, guid: 807ca6cf51156bf4791cb3e63ccebebf, type: 2}
+  - {fileID: 100026, guid: 181759e2f05b6524f90200c2a6f6b73c, type: 2}
   maxDebris: 20
   debrisScale: .400000006
   rotationVelocity: 20
@@ -4051,9 +4051,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debris:
-  - {fileID: 100142, guid: 3837ae975bcf0284bba536b823be22d2, type: 2}
-  - {fileID: 100074, guid: 9763a78a9acf85c46ac7cc3d1cfbeba5, type: 2}
-  - {fileID: 100026, guid: 86f702679569dd1448bc7720d4b9d7e6, type: 2}
+  - {fileID: 100142, guid: e38394fe30f4a244fa8c4c72015ed584, type: 2}
+  - {fileID: 100074, guid: 807ca6cf51156bf4791cb3e63ccebebf, type: 2}
+  - {fileID: 100026, guid: 181759e2f05b6524f90200c2a6f6b73c, type: 2}
   maxDebris: 20
   debrisScale: .400000006
   rotationVelocity: 20
