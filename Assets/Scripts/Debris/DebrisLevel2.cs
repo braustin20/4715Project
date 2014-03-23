@@ -3,8 +3,10 @@ using System.Collections;
 
 public class DebrisLevel2: MonoBehaviour {
 	public GameObject explosionEffect;
-	public float killTime = 1.0f;
+	public float killTime = 2.0f;
 	private float timer = 0.0f;
+	private GameObject spawner;
+	private bool allowDestroy = false;
 
 
 	// Use this for initialization
@@ -14,10 +16,12 @@ public class DebrisLevel2: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		timer += Time.deltaTime;
-		if(timer >= killTime){
-			Debug.Log("Destroying myself");
-			GameObject.Destroy(this);
+		if(allowDestroy){
+			timer += Time.deltaTime;
+			if(timer >= killTime){
+				spawner.GetComponent<DebrisSpawnerLevel2>().removeFromList(this.gameObject);
+				GameObject.Destroy(this.gameObject);
+			}
 		}
 	}
 	void OnTriggerEnter(Collider other){
@@ -27,5 +31,11 @@ public class DebrisLevel2: MonoBehaviour {
 			GameObject.Instantiate(explosionEffect, other.transform.position + Vector3.forward * 3, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
 		}
+	}
+	public void setSpawner(GameObject sp){
+		spawner = sp;
+	}
+	public void setAllowDestroy(bool allow){
+		allowDestroy = allow;
 	}
 }
