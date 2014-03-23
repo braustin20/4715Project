@@ -3,8 +3,6 @@ using System.Collections;
 
 public class FlyingControls : MonoBehaviour {
 
-	private GameObject OVRCamera;
-	private GameObject FPSCamera;
 	private GameManager gameManager;
 	private bool oculusEnabled;
 	private bool allowJetpack;
@@ -21,10 +19,6 @@ public class FlyingControls : MonoBehaviour {
 
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-		OVRCamera = gameManager.getOVRCamera();
-		FPSCamera = gameManager.getFPSCamera();
-
-		oculusEnabled = gameManager.isOculusEnabled();
 
 		rigidbody.AddForce(new Vector3(0, 0, 1) * minSpeed);
 	}

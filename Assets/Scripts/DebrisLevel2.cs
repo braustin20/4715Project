@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Debris : MonoBehaviour {
+public class DebrisLevel2: MonoBehaviour {
 	public GameObject explosionEffect;
+	public float killTime = 1.0f;
+	private float timer = 0.0f;
+
 
 	// Use this for initialization
 	void Start () {
@@ -11,7 +14,11 @@ public class Debris : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		timer += Time.deltaTime;
+		if(timer >= killTime){
+			Debug.Log("Destroying myself");
+			GameObject.Destroy(this);
+		}
 	}
 	void OnTriggerEnter(Collider other){
 		//If this debris collided with the ship explode and destroy this debris
