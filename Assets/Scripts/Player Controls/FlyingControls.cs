@@ -20,6 +20,7 @@ public class FlyingControls : MonoBehaviour {
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
+
 		rigidbody.AddForce(new Vector3(0, 0, 1) * minSpeed);
 	}
 	
