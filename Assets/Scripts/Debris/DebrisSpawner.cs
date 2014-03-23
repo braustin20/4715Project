@@ -31,10 +31,10 @@ public class DebrisSpawner : MonoBehaviour {
 			aliveDebris[i].transform.position = new Vector3(
 				tempPosition.x + (Random.Range(-450.0f, 450.0f)), 
 				tempPosition.y + (Random.Range(-375.0f, 375.0f)), 
-				tempPosition.z + (500 + Random.Range(0.0f, 2500.0f)));
+				tempPosition.z + (500 + Random.Range(0.0f, 5000.0f)));
 			//Push the debris towards the player
 			//Apply a set force, but control speed by rigidbody weight in the inspector
-			aliveDebris[i].rigidbody.AddForce(0, 0, -1000.0f);
+			aliveDebris[i].rigidbody.AddForce(0, 0, -40000.0f);
 			//Make the debris spin and flip at a random speed
 
 			aliveDebris[i].rigidbody.AddTorque(Random.Range(-rotationVelocity, rotationVelocity),

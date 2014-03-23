@@ -23,7 +23,6 @@ public class DebrisSpawnerLevel2: MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
-		Debug.Log(aliveDebris.Count);
 		if(aliveDebris.Count < maxDebris && timer >= spawnInterval){
 			timer = 0.0f;
 			spawnDebris();
