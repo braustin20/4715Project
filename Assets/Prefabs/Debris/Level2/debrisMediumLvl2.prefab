@@ -594,7 +594,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 82: {fileID: 8200000}
   m_Layer: 0
-  m_Name: debrisMedium
+  m_Name: debrisMediumLvl2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -779,7 +779,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: -.539193273, y: -.464952916, z: .45857048, w: .531791806}
+  m_LocalRotation: {x: -.539193332, y: -.464952946, z: .45857051, w: .531791866}
   m_LocalPosition: {x: -1.55595163e-08, y: -3.33596573e-09, z: -.0438366123}
   m_LocalScale: {x: .5, y: .940955102, z: 1}
   m_Children: []
