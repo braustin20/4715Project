@@ -493,8 +493,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.74071491, y: 24.9999943, z: 4.56687927}
-  m_Center: {x: -.370357454, y: -12.058794, z: .28343907}
+  m_Size: {x: 3.81307864, y: 24.9999943, z: 4.56687927}
+  m_Center: {x: -1.40653932, y: -12.058794, z: .28343907}
 --- !u!4 &394378317
 Transform:
   m_ObjectHideFlags: 0
@@ -734,8 +734,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.72486925, y: 40.0000038, z: 3}
-  m_Center: {x: -.362436801, y: -18.8496571, z: -3.14245585e-06}
+  m_Size: {x: 3.86070395, y: 40.0000038, z: 3}
+  m_Center: {x: -1.43036973, y: -18.850069, z: -4.08510932e-05}
 --- !u!4 &611365533
 Transform:
   m_ObjectHideFlags: 0
@@ -898,6 +898,10 @@ Prefab:
     - target: {fileID: 11400000, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
       propertyPath: minSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
+      propertyPath: maxSpeed
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
@@ -1111,8 +1115,8 @@ MonoBehaviour:
   - {fileID: 100026, guid: 63bfde542ac277844b44f07341b73d16, type: 2}
   - {fileID: 100074, guid: f4fb58f0733381847bb75b39227307e9, type: 2}
   - {fileID: 100142, guid: 82a8408c9e81f6545b4c2e0d8333b334, type: 2}
-  maxDebris: 100
-  debrisScale: 3
+  maxDebris: 80
+  debrisScale: 10
   rotationVelocity: 20
 --- !u!1 &1246646504
 GameObject:
@@ -1194,8 +1198,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.68252504, y: 24.9999943, z: 4.57825899}
-  m_Center: {x: .341262579, y: 14.4118519, z: .289129972}
+  m_Size: {x: 3.86403799, y: 24.9999943, z: 4.57825899}
+  m_Center: {x: 1.43201828, y: 14.4133263, z: .289105922}
 --- !u!4 &1337872601
 Transform:
   m_ObjectHideFlags: 0
@@ -1298,8 +1302,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.77272296, y: 40, z: 3}
-  m_Center: {x: -.386363328, y: -8.05810165, z: 2.2818462e-15}
+  m_Size: {x: 3.84234095, y: 40, z: 3}
+  m_Center: {x: -1.42118478, y: -8.05810165, z: 4.26855859e-15}
 --- !u!4 &1628971649
 Transform:
   m_ObjectHideFlags: 0
@@ -1557,7 +1561,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f1a2ab7710f19d142963cbf1c89b6b87, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 232.292984
+      value: 637.277222
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f1a2ab7710f19d142963cbf1c89b6b87, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1577,7 +1581,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: f1a2ab7710f19d142963cbf1c89b6b87, type: 2}
       propertyPath: fadeTime
-      value: 10
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: f1a2ab7710f19d142963cbf1c89b6b87, type: 2}
       propertyPath: m_Size.x
@@ -1911,7 +1915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 12
-  maxSpeed: 15
+  maxSpeed: 20
   minSpeed: 10
 --- !u!54 &2100070623
 Rigidbody:
@@ -1997,7 +2001,6 @@ GameObject:
   - 4: {fileID: 2128279846}
   - 65: {fileID: 2128279845}
   - 114: {fileID: 2128279844}
-  - 114: {fileID: 2128279847}
   m_Layer: 0
   m_Name: levelLoader
   m_TagString: Untagged
@@ -2019,7 +2022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFading: 0
   loadTimer: 0
-  fadeTime: 10
+  fadeTime: .200000003
 --- !u!65 &2128279845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2040,20 +2043,7 @@ Transform:
   m_PrefabInternal: {fileID: 1799987151}
   m_GameObject: {fileID: 2128279843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.70502043, y: 2.31464005, z: 232.292984}
+  m_LocalPosition: {x: -5.70502043, y: 2.31464005, z: 637.277222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &2128279847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2128279843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b817ac705469b47b3f54fb2a1c6cc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ship: {fileID: 1830779450}
-  projectilePrefab: {fileID: 100000, guid: c73f335cdc029d5459954cdeddf8231d, type: 2}

@@ -29,9 +29,9 @@ public class DebrisSpawner : MonoBehaviour {
 			Vector3 tempPosition = player.transform.position;
 			//Randomly find a point within the bounding area to place this debris
 			aliveDebris[i].transform.position = new Vector3(
-				tempPosition.x + (Random.Range(-150.0f, 150.0f)), 
-				tempPosition.y + (Random.Range(-75.0f, 75.0f)), 
-				tempPosition.z + (100 + Random.Range(0.0f, 400.0f)));
+				tempPosition.x + (Random.Range(-250.0f, 250.0f)), 
+				tempPosition.y + (Random.Range(-175.0f, 175.0f)), 
+				tempPosition.z + (100 + Random.Range(0.0f, 800.0f)));
 			//Push the debris towards the player
 			//Apply a set force, but control speed by rigidbody weight in the inspector
 			aliveDebris[i].rigidbody.AddForce(0, 0, -1000.0f);
