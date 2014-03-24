@@ -241,6 +241,8 @@ GameObject:
   - 15: {fileID: 1500000}
   - 12: {fileID: 1200000}
   - 26: {fileID: 2600000}
+  - 114: {fileID: 11400020}
+  - 108: {fileID: 10800000}
   m_Layer: 0
   m_Name: ChargeUpParticle
   m_TagString: Untagged
@@ -259,6 +261,7 @@ GameObject:
   - 33: {fileID: 3300018}
   - 65: {fileID: 6500000}
   - 23: {fileID: 2300018}
+  - 114: {fileID: 11400022}
   m_Layer: 0
   m_Name: ShipPlaceholder
   m_TagString: Untagged
@@ -512,7 +515,7 @@ EllipsoidParticleEmitter:
   m_GameObject: {fileID: 100026}
   serializedVersion: 2
   m_Enabled: 1
-  m_Emit: 1
+  m_Emit: 0
   minSize: 4.9000001
   maxSize: 17.1000004
   minEnergy: 0
@@ -1017,6 +1020,41 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!108 &10800000
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .926470578, g: .108996533, b: .108996533, a: 1}
+  m_Intensity: 1
+  m_Range: 43.25
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1182,6 +1220,30 @@ MonoBehaviour:
   maximumX: 360
   minimumY: -60
   maximumY: 60
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d7d8f761fb0734c80af988360f9d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalMaxSize: 50
+  finalMaxAmt: 100
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ee8cf1bbbf766489a4a990115a2457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
