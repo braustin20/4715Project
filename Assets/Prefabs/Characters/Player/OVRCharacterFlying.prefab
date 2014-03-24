@@ -258,12 +258,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400028}
-  - 33: {fileID: 3300018}
-  - 65: {fileID: 6500000}
-  - 23: {fileID: 2300018}
-  - 114: {fileID: 11400022}
+  - 33: {fileID: 3300014}
+  - 23: {fileID: 2300014}
   m_Layer: 0
-  m_Name: ShipPlaceholder
+  m_Name: AlienCraft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -342,11 +340,11 @@ Transform:
   m_LocalPosition: {x: 3.96880102, y: 4.97348309, z: -80.1608582}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400028}
   - {fileID: 400022}
   - {fileID: 400036}
   - {fileID: 400000}
   - {fileID: 400004}
-  - {fileID: 400028}
   - {fileID: 400010}
   m_Father: {fileID: 0}
 --- !u!4 &400010
@@ -449,9 +447,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100026}
-  m_LocalRotation: {x: -.00172083045, y: .029096188, z: .0590144172, w: .997831583}
-  m_LocalPosition: {x: -.0985731632, y: -.123759881, z: -.684404671}
-  m_LocalScale: {x: .00364932348, y: .0128252022, z: .0201219171}
+  m_LocalRotation: {x: -.70639658, y: -.166590363, z: .157904401, w: .669565439}
+  m_LocalPosition: {x: -1.71651065, y: 9.99058437, z: 1.65792811}
+  m_LocalScale: {x: .140927106, y: .143794447, z: .113298103}
   m_Children: []
   m_Father: {fileID: 400028}
 --- !u!4 &400028
@@ -460,9 +458,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: -3.6190726e-05, y: .000611997151, z: -.0590394884, w: .998255491}
-  m_LocalPosition: {x: -309.297943, y: 47.2486916, z: 3019.82666}
-  m_LocalScale: {x: 288.927734, y: 77.1775131, z: 49.5583687}
+  m_LocalRotation: {x: .0181672182, y: .608014584, z: -.793704927, w: -.00456035929}
+  m_LocalPosition: {x: -312.83197, y: 84.8797073, z: 3848.74487}
+  m_LocalScale: {x: 7.32787037, y: 9.28579235, z: 7.32786846}
   m_Children:
   - {fileID: 400026}
   m_Father: {fileID: 400008}
@@ -768,7 +766,7 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!23 &2300018
+--- !u!23 &2300014
 Renderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -780,7 +778,13 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5c1bf432f1a6d3943bcf25ddd0326fa4, type: 2}
+  - {fileID: 2100000, guid: 4b2774469328fef43aad88dfb6b76f24, type: 2}
+  - {fileID: 2100000, guid: 7c6063f5c66c3e4478127d9132e4912a, type: 2}
+  - {fileID: 2100000, guid: bffe6a7a67f7f514f83fbee209a977d1, type: 2}
+  - {fileID: 2100000, guid: 7d89bf91026e944249810da3a923852d, type: 2}
+  - {fileID: 2100000, guid: 2e7d3cb4959bec74688318a86a0c8eae, type: 2}
+  - {fileID: 2100000, guid: 2227ae5758bc99c458c445ce6951dad4, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -869,13 +873,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100024}
   m_Mesh: {fileID: 4300014, guid: bdea1b225d24eb94f8a66286043b11d9, type: 3}
---- !u!33 &3300018
+--- !u!33 &3300014
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 1124e2cd547ae8e4b8288878d668fdb9, type: 3}
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -891,18 +895,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6500000
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6500002
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1067,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 100
-  maxSpeed: 100
+  maxSpeed: 120
   minSpeed: 30
 --- !u!114 &11400002
 MonoBehaviour:
@@ -1233,17 +1225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finalMaxSize: 50
   finalMaxAmt: 100
---- !u!114 &11400022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ee8cf1bbbf766489a4a990115a2457, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
