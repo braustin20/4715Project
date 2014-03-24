@@ -15,7 +15,7 @@ public class AudioManagerLevel1 : MonoBehaviour {
 	void Update () {
 		if(!musicFaded){
 			if(audio.volume < 0.5f){
-				audio.volume += 0.0005f;
+				audio.volume += 0.0002f;
 			}
 			else{
 				musicFaded = true;

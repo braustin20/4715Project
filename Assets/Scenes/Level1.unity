@@ -1463,6 +1463,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999557078
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
+      propertyPath: maxSpeed
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
   m_RootGameObject: {fileID: 1878794323}
@@ -1747,7 +1751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 100
-  maxSpeed: 100
+  maxSpeed: 120
   minSpeed: 30
 --- !u!54 &1878794326
 Rigidbody:
