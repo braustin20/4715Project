@@ -21,8 +21,7 @@ public class DebrisSpawner : MonoBehaviour {
 
 		//Fill the array of debris
 		for(int i = 0; i <= maxDebris; i++){
-			spawnDebris(500.0f);
-			Debug.Log("Spawning debris");
+			spawnDebris(7000.0f);
 		}
 	}
 	private void spawnDebris(float offset){

@@ -210,7 +210,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 65: {fileID: 6500002}
   m_Layer: 0
-  m_Name: debrisSmall
+  m_Name: debrisSmall_static
   m_TagString: Debris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

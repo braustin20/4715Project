@@ -10,12 +10,13 @@ public class CameraFadeIn : MonoBehaviour
 	private Color m_DeltaColor = new Color(0,0,0,0);
 	private int m_FadeGUIDepth = -1000;
 	public bool isFading = false;
-	public float fadeTimer = 0;
+	public float duration = 1.0f;
+	private float fadeTimer = 0;
 	
 
 	private void Awake()
 	{		
-		StartFade (Color.clear, 10.0f);
+		StartFade (Color.clear, duration);
 		isFading = true;
 		m_FadeTexture = new Texture2D(1, 1);        
 		m_BackgroundStyle.normal.background = m_FadeTexture;
@@ -62,7 +63,7 @@ public class CameraFadeIn : MonoBehaviour
 
 	public void setClearNow(){
 		Debug.Log ("Clear Overlay");
-		StartFade (Color.clear, 1.0f);
+		StartFade (Color.clear, duration);
 		isFading = true;
 		m_FadeTexture = new Texture2D(1, 1);        
 		m_BackgroundStyle.normal.background = m_FadeTexture;

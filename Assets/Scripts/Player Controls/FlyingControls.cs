@@ -7,9 +7,9 @@ public class FlyingControls : MonoBehaviour {
 	private bool oculusEnabled;
 	private bool allowJetpack;
 
-	public float moveSpeed = 1.0f;
-	public float maxSpeed = 15.0f;
-	public float minSpeed = 7.0f;
+	public float moveSpeed = 100.0f;
+	public float maxSpeed = 100.0f;
+	public float minSpeed = 30.0f;
 
 
 	private float currentSpeed;
@@ -59,12 +59,12 @@ public class FlyingControls : MonoBehaviour {
 		Vector3 tempVelocity = rigidbody.velocity;
 		//If we exceed the maximum speed, determine velocity direction and lock it
 		if(checkMaxSpeed()){
-			Debug.Log("Speed too high: " + tempVelocity.z);
+			//Debug.Log("Speed too high: " + tempVelocity.z);
 			rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, (1.0f * maxSpeed));
 			//rigidbody.AddForce(new Vector3(0, 0, 1.0f) * maxSpeed);
 		}  
 		if(checkMinSpeed()){
-			Debug.Log("Speed not sufficient: " + tempVelocity.z);
+			//Debug.Log("Speed not sufficient: " + tempVelocity.z);
 			rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, (1.0f * minSpeed));
 			//rigidbody.AddForce(new Vector3(0, 0, 1.0f) * minSpeed);
 		}
