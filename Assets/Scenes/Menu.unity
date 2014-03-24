@@ -865,9 +865,9 @@ LensFlare:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1428390273}
   m_Enabled: 1
-  m_Flare: {fileID: 12100000, guid: 09ebe82dbd1113c3d000dc0b8d76c639, type: 2}
+  m_Flare: {fileID: 12100000, guid: 8541d94808d5849d8bfa480259334205, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_Brightness: 1.08000004
+  m_Brightness: .569999993
   m_FadeSpeed: 3
   m_IgnoreLayers:
     serializedVersion: 2
@@ -919,7 +919,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1428390273}
-  m_LocalRotation: {x: .00290053827, y: -.14853847, z: .138340622, w: .979178131}
+  m_LocalRotation: {x: .00232520793, y: -.15260914, z: .138351515, w: .978551984}
   m_LocalPosition: {x: -5.0400753, y: 8.76091099, z: -21.7499237}
   m_LocalScale: {x: 9.851964, y: 9.851964, z: 9.851964}
   m_Children: []
