@@ -6,7 +6,6 @@ public class OxygenBar : MonoBehaviour {
 	private float maxOxygen;
 	private GameObject player;
 	private float startingScaleY;
-	private float colorIncrement;
 	private bool toggledMid;
 
 	// Use this for initialization
@@ -15,7 +14,6 @@ public class OxygenBar : MonoBehaviour {
 		currentOxygen = player.GetComponent<FloatingControls>().oxygen;
 		maxOxygen = currentOxygen;
 		startingScaleY = this.transform.localScale.y;
-		Debug.Log(colorIncrement);
 	}
 	
 	// Update is called once per frame

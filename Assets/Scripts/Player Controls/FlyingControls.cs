@@ -56,7 +56,6 @@ public class FlyingControls : MonoBehaviour {
 		}
 	}
 	void FixedUpdate() {
-		Vector3 tempVelocity = rigidbody.velocity;
 		//If we exceed the maximum speed, determine velocity direction and lock it
 		if(checkMaxSpeed()){
 			//Debug.Log("Speed too high: " + tempVelocity.z);
