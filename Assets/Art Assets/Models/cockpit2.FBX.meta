@@ -12,6 +12,7 @@ ModelImporter:
     100012: Glass
     100014: RearWall
     100016: Seat
+    100018: Screens
     400000: Box007
     400002: //RootNode
     400004: CockpitSupports
@@ -21,6 +22,7 @@ ModelImporter:
     400012: Glass
     400014: RearWall
     400016: Seat
+    400018: Screens
     2300000: CockpitSupports
     2300002: CockpitWalls
     2300004: Cylinder001
@@ -28,6 +30,7 @@ ModelImporter:
     2300008: Glass
     2300010: RearWall
     2300012: Seat
+    2300014: Screens
     3300000: CockpitSupports
     3300002: CockpitWalls
     3300004: Cylinder001
@@ -35,6 +38,7 @@ ModelImporter:
     3300008: Glass
     3300010: RearWall
     3300012: Seat
+    3300014: Screens
     4300000: CockpitWalls
     4300002: Floor
     4300004: RearWall
@@ -42,6 +46,7 @@ ModelImporter:
     4300008: Glass
     4300010: Seat
     4300012: Cylinder001
+    4300014: Screens
     9500000: //RootNode
   materials:
     importMaterials: 1

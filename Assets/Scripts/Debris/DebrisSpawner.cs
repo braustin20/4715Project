@@ -3,11 +3,13 @@ using System.Collections;
 
 public class DebrisSpawner : MonoBehaviour {
 	public GameObject[] debris;
-	public int maxDebris = 20;
-	public float debrisScale = 3.0f;
+	public int maxDebris = 200;
+	public float debrisScale = 10.0f;
 	public float rotationVelocity = 20.0f;
+	public float velocity = -40000.0f;
 
-	private GameObject[] aliveDebris;
+	//private GameObject[] aliveDebris;
+	private ArrayList aliveDebris = new ArrayList();
 	private GameObject player;
 
 	// Use this for initialization
@@ -15,37 +17,44 @@ public class DebrisSpawner : MonoBehaviour {
 		//Find the player
 		player = GameObject.FindGameObjectWithTag("Player");
 		//Create an array with a capacity to hold our set max debris number
-		aliveDebris = new GameObject[maxDebris];
+//		aliveDebris = new GameObject[maxDebris];
 
 		//Fill the array of debris
-		for(int i = 0; i < maxDebris; i++){
-			//Pick a debris prefab from the list made in the inspector
-			int randomSize = Random.Range(0, (debris.Length));
-
-			//Instantiate and add a debris object to the array of alive debris
-			aliveDebris[i] = GameObject.Instantiate(debris[randomSize]) as GameObject;
-			//Create a temporary value to store the player's position
-			//Move this debris relative to the player
-			Vector3 tempPosition = player.transform.position;
-			//Randomly find a point within the bounding area to place this debris
-			aliveDebris[i].transform.position = new Vector3(
-				tempPosition.x + (Random.Range(-450.0f, 450.0f)), 
-				tempPosition.y + (Random.Range(-375.0f, 375.0f)), 
-				tempPosition.z + (500 + Random.Range(0.0f, 5000.0f)));
-			//Push the debris towards the player
-			//Apply a set force, but control speed by rigidbody weight in the inspector
-			aliveDebris[i].rigidbody.AddForce(0, 0, -40000.0f);
-			//Make the debris spin and flip at a random speed
-
-			aliveDebris[i].rigidbody.AddTorque(Random.Range(-rotationVelocity, rotationVelocity),
-			                                   Random.Range(-rotationVelocity, rotationVelocity),
-			                                   Random.Range(-rotationVelocity, rotationVelocity));
-			//Resize the debris to make it a challenge
-			aliveDebris[i].transform.localScale = new Vector3(debrisScale, debrisScale, debrisScale);
+		for(int i = 0; i <= maxDebris; i++){
+			spawnDebris(500.0f);
+			Debug.Log("Spawning debris");
 		}
 	}
-	
+	private void spawnDebris(float offset){
+		int randomSize = Random.Range(0, (debris.Length));
+		
+		GameObject tempDebris = GameObject.Instantiate(debris[randomSize], this.transform.position, this.transform.rotation) as GameObject;
+		aliveDebris.Add(tempDebris);
+
+		Vector3 spawnPosition = player.transform.position;
+
+		tempDebris.transform.position = new Vector3(
+			spawnPosition.x + (Random.Range(-450.0f, 450.0f)), 
+			spawnPosition.y + (Random.Range(-375.0f, 375.0f)), 
+			spawnPosition.z + (offset + Random.Range(0.0f, 5000.0f)));
+		//Push the debris towards the player
+		//Apply a set force, but control speed by rigidbody weight in the inspector
+		tempDebris.rigidbody.AddForce(transform.forward * velocity);
+		//Make the debris spin and flip at a random speed
+		
+		tempDebris.rigidbody.AddTorque(Random.Range(-rotationVelocity, rotationVelocity),
+		                               Random.Range(-rotationVelocity, rotationVelocity),
+		                               Random.Range(-rotationVelocity, rotationVelocity));
+		//Resize the debris to make it a challenge
+		tempDebris.transform.localScale = new Vector3(debrisScale, debrisScale, debrisScale);
+		tempDebris.GetComponent<Debris>().setSpawner(this.gameObject);
+	}
 	// Update is called once per frame
 	void Update () {
+	}
+	public void removeFromList(GameObject debris){
+		aliveDebris.Remove(debris);
+		GameObject.Destroy(debris);
+		spawnDebris(5000.0f);
 	}
 }

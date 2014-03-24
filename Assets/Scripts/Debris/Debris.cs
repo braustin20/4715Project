@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Debris : MonoBehaviour {
 	public GameObject explosionEffect;
+	private GameObject spawner;
 
 	// Use this for initialization
 	void Start () {
@@ -20,5 +21,11 @@ public class Debris : MonoBehaviour {
 			GameObject.Instantiate(explosionEffect, other.transform.position + Vector3.forward * 3, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
 		}
+	}
+	public void destroyDebris(){
+		spawner.GetComponent<DebrisSpawner>().removeFromList(this.gameObject);
+	}
+	public void setSpawner(GameObject sp){
+		spawner = sp;
 	}
 }
