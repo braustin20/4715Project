@@ -106,7 +106,7 @@ GameObject:
   - 65: {fileID: 6500002}
   - 114: {fileID: 11400016}
   m_Layer: 0
-  m_Name: debrisDestroyer
+  m_Name: Debris Destroyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,7 +260,7 @@ GameObject:
   - 33: {fileID: 3300008}
   - 23: {fileID: 2300008}
   m_Layer: 0
-  m_Name: earthfinal
+  m_Name: Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9a9d2997efbdc4b47b5af2a40ec631a8, type: 2}
+  - {fileID: 2100000, guid: 2367c46bf6ec8e04fbfcf543ccc35acb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -622,7 +622,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 1da0ec11372fc5f4785630c708132e72, type: 2}
+  - {fileID: 2100000, guid: 0ec3a4cdea1a08944bb7adc945c68e9d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -643,7 +643,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 572583b2ef46ec543b2b886fa36c9c7c, type: 2}
+  - {fileID: 2100000, guid: 546b2326b124cb14baef69b98f7a213f, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -685,7 +685,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b38d98c67cc01314a88cf55b08ac5ba9, type: 2}
+  - {fileID: 2100000, guid: 9696f3b0a44c51640878d52c34f3cf9c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
