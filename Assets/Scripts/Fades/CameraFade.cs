@@ -16,12 +16,13 @@ public class CameraFade : MonoBehaviour
 	//Make sure this texture is drawn on top of everything
 	private int m_FadeGUIDepth = -1000;								
 	public bool isFading = false;
-	public float loadTimer = 0.0f;
+	private float loadTimer = 0.0f;
 	public float fadeTime = 2.0f;
 	
 	// initialize the texture, background-style and initial color:
 	private void Awake()
 	{		
+		loadTimer = 0.0f;
 		m_FadeTexture = new Texture2D(1, 1);        
 		m_BackgroundStyle.normal.background = m_FadeTexture;
 		SetScreenOverlayColor(m_CurrentScreenOverlayColor);
@@ -36,8 +37,9 @@ public class CameraFade : MonoBehaviour
 		if(isFading == true){
 			loadTimer += Time.deltaTime;
 		}
-		if(loadTimer > fadeTime){
+		if(loadTimer >= fadeTime){
 			Debug.Log ("Fading Complete");
+			Debug.Log ("Switching to level: " + (Application.loadedLevel + 1));
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 	}

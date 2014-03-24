@@ -2177,7 +2177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFading: 0
-  loadTimer: 0
   fadeTime: .200000003
 --- !u!65 &2128279845
 BoxCollider:
