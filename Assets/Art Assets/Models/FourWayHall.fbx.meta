@@ -70,6 +70,16 @@ ModelImporter:
     100128: transform7
     100130: transform8
     100132: transform9
+    100134: pasted__group4 1
+    100136: pasted__pasted__group2 1
+    100138: pasted__pasted__pasted__pCylinder2 1
+    100140: pasted__pasted__pasted__polySurface1 1
+    100142: pasted__pasted__pasted__pPlane3 1
+    100144: pasted__pasted__pasted__transform3 1
+    100146: pasted__pasted__pasted__transform4 1
+    100148: pasted__polySurface3 1
+    100150: pasted__transform7 1
+    100152: pasted__transform8 1
     400000: //RootNode
     400002: group
     400004: group1
@@ -137,16 +147,30 @@ ModelImporter:
     400128: transform7
     400130: transform8
     400132: transform9
+    400134: pasted__group4 1
+    400136: pasted__pasted__group2 1
+    400138: pasted__pasted__pasted__pCylinder2 1
+    400140: pasted__pasted__pasted__polySurface1 1
+    400142: pasted__pasted__pasted__pPlane3 1
+    400144: pasted__pasted__pasted__transform3 1
+    400146: pasted__pasted__pasted__transform4 1
+    400148: pasted__polySurface3 1
+    400150: pasted__transform7 1
+    400152: pasted__transform8 1
     2300000: pasted__polySurface1
     2300002: pasted__polySurface1 1
     2300004: polySurface4
+    2300006: polySurface1
     3300000: pasted__polySurface1
     3300002: pasted__polySurface1 1
     3300004: polySurface4
+    3300006: polySurface1
+    4300000: polySurface1
     4300004: polySurface4
     6400000: pasted__polySurface1
     6400002: pasted__polySurface1 1
     6400004: polySurface4
+    6400006: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
