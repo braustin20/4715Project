@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
   - enabled: 1
+    path: Assets/Scenes/Instructions_Level1.unity
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
   - enabled: 1
+    path: Assets/Scenes/Instructions_Level2.unity
+  - enabled: 1
     path: Assets/Scenes/Level2.unity
+  - enabled: 1
+    path: Assets/Scenes/Instructions_Level3.unity
   - enabled: 1
     path: Assets/Scenes/Prototypes/stationPrototype.unity
   - enabled: 1
