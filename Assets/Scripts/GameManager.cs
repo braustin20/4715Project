@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//fps
+		Debug.Log(1/Time.deltaTime);
 		//Toggle for oculus display
 		if(Input.GetKeyDown(KeyCode.O)){
 			if(oculus == true){

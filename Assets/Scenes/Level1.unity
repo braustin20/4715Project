@@ -1011,10 +1011,10 @@ MonoBehaviour:
   - {fileID: 100026, guid: 63bfde542ac277844b44f07341b73d16, type: 2}
   - {fileID: 100074, guid: f4fb58f0733381847bb75b39227307e9, type: 2}
   - {fileID: 100142, guid: 82a8408c9e81f6545b4c2e0d8333b334, type: 2}
-  maxDebris: 200
-  debrisScale: 10
+  maxDebris: 70
+  debrisScale: 40
   rotationVelocity: 20
-  velocity: -40000
+  velocity: -60000
 --- !u!114 &1239076960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,7 +1480,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400026, guid: b058415f4226dfd49acf0ca4aae8fa2d, type: 2}
   m_PrefabInternal: {fileID: 2107263931}
   m_GameObject: {fileID: 1661411070}
-  m_LocalRotation: {x: -.70639658, y: -.166590363, z: .157904401, w: .669565439}
+  m_LocalRotation: {x: -.70639652, y: -.166590348, z: .157904387, w: .66956538}
   m_LocalPosition: {x: -1.71651065, y: 9.99058437, z: 1.65792811}
   m_LocalScale: {x: .140927106, y: .143794447, z: .113298103}
   m_Children: []
