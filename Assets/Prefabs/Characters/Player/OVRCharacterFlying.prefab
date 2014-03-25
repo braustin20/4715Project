@@ -156,7 +156,7 @@ GameObject:
   - 4: {fileID: 400014}
   - 33: {fileID: 3300002}
   - 23: {fileID: 2300002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,8 +975,8 @@ MonoBehaviour:
   moveSpeed: 100
   maxSpeed: 300
   minSpeed: 30
-  damagedMaterial: {fileID: 2100000, guid: 8aad3a8cbbcffde479bbefcf0be5c917, type: 2}
-  destroyedMaterial: {fileID: 2100000, guid: 30326cd796147d04588c51e3221129b7, type: 2}
+  damagedMaterial: {fileID: 2100000, guid: 4bb5649cfa44c6646b04a62be2bfa123, type: 2}
+  destroyedMaterial: {fileID: 2100000, guid: a0d146d906563d84ebcd8a0d94c745cd, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

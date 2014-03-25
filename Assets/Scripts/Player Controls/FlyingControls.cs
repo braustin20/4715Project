@@ -103,14 +103,20 @@ public class FlyingControls : MonoBehaviour {
 	}
 	public void damagePlayer(){
 		Debug.Log("Damaging Player");
+		Material tempMaterial = GameObject.Find("Glass").renderer.material;
+		Material[] materialList = new Material[2];
 
 		switch (timesHit){
 		case 0:
-			GameObject.Find("Glass").renderer.material = damagedMaterial;
+			materialList[0] = tempMaterial;
+			materialList[1] = damagedMaterial;
+			GameObject.Find("Glass").renderer.materials = materialList;
 			timesHit++;
 			break;
 		case 1:
-			GameObject.Find("Glass").renderer.material = destroyedMaterial;
+			materialList[0] = tempMaterial;
+			materialList[1] = destroyedMaterial;
+			GameObject.Find("Glass").renderer.materials = materialList;
 			timesHit++;
 			break;
 		case 2:
