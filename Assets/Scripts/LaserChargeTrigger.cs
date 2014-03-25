@@ -17,6 +17,7 @@ public class LaserChargeTrigger : MonoBehaviour {
 			Debug.Log("Laser Charging");
 			GameObject.Find("ChargeUpParticle").GetComponent<ParticleEmitter>().emit = true;
 			GameObject.Find("ChargeUpParticle").GetComponent<Light>().enabled = true;
+			audio.Play();
 		}
 	}
 }
