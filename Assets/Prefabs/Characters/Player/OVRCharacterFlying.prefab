@@ -417,9 +417,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: -.0412267447, y: .605971873, z: -.792841613, w: -.0500071459}
-  m_LocalPosition: {x: -312.83197, y: 84.8797073, z: 3848.74487}
-  m_LocalScale: {x: 4.52260828, y: 5.73099756, z: 4.52260685}
+  m_LocalRotation: {x: .0248948224, y: .608031631, z: -.793522239, w: .000593983685}
+  m_LocalPosition: {x: -1480.30896, y: -196.314636, z: 5515.61816}
+  m_LocalScale: {x: 18.2357311, y: 23.1081085, z: 18.2357178}
   m_Children:
   - {fileID: 400026}
   m_Father: {fileID: 400008}
@@ -430,7 +430,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100030}
   m_LocalRotation: {x: 0, y: .315145582, z: 0, w: .949043393}
-  m_LocalPosition: {x: -16.0471191, y: -2.12352538, z: 13.916564}
+  m_LocalPosition: {x: -16.0471191, y: 3.51512146, z: 13.916564}
   m_LocalScale: {x: .233620957, y: .233620957, z: .233620957}
   m_Children: []
   m_Father: {fileID: 400008}
@@ -441,8 +441,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100036}
   m_LocalRotation: {x: 0, y: .0297598299, z: 0, w: .999557078}
-  m_LocalPosition: {x: 347.027832, y: 47.2487068, z: 2938.64111}
-  m_LocalScale: {x: 3.55558801, y: 3.55558801, z: 3.55558801}
+  m_LocalPosition: {x: 1757.76208, y: 47.2487068, z: 4796.47803}
+  m_LocalScale: {x: 53.0019875, y: 53.0019875, z: 53.0019875}
   m_Children: []
   m_Father: {fileID: 400008}
 --- !u!12 &1200000
@@ -853,7 +853,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 973b85034363b4f53ac4f5b19aef0b63, type: 3}
   m_PlayOnAwake: 1
@@ -973,8 +973,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 100
-  maxSpeed: 120
+  maxSpeed: 300
   minSpeed: 30
+  damagedMaterial: {fileID: 2100000, guid: 8aad3a8cbbcffde479bbefcf0be5c917, type: 2}
+  destroyedMaterial: {fileID: 2100000, guid: 30326cd796147d04588c51e3221129b7, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

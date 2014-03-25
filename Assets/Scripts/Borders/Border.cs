@@ -16,7 +16,6 @@ public class Border : MonoBehaviour {
 
 		//Only act if the player or their ship has touched the border
 		if(other.gameObject.tag == "Ship"){
-			Debug.Log("Player hit border");
 			//Push the player along the y axis if this is a top or bottom border
 			if(transform.up.normalized.y != 0.0f){
 				if(transform.up.normalized.y > 0.0f){

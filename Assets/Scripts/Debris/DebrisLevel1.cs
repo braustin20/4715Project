@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Debris : MonoBehaviour {
+public class DebrisLevel1: MonoBehaviour {
 	public GameObject explosionEffect;
 	private GameObject spawner;
 
@@ -20,6 +20,7 @@ public class Debris : MonoBehaviour {
 			//Place the explosion in front of the ship by 3 units
 			GameObject.Instantiate(explosionEffect, other.transform.position + Vector3.forward * 3, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
+			GameObject.Find("OVRCharacterFlying").GetComponent<FlyingControls>().damagePlayer();
 		}
 	}
 	public void destroyDebris(){

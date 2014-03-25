@@ -46,7 +46,7 @@ public class DebrisSpawner : MonoBehaviour {
 		                               Random.Range(-rotationVelocity, rotationVelocity));
 		//Resize the debris to make it a challenge
 		tempDebris.transform.localScale = new Vector3(debrisScale, debrisScale, debrisScale);
-		tempDebris.GetComponent<Debris>().setSpawner(this.gameObject);
+		tempDebris.GetComponent<DebrisLevel1>().setSpawner(this.gameObject);
 	}
 	// Update is called once per frame
 	void Update () {

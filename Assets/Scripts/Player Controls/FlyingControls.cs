@@ -11,6 +11,12 @@ public class FlyingControls : MonoBehaviour {
 	public float maxSpeed = 100.0f;
 	public float minSpeed = 30.0f;
 
+	private int timesHit = 0;
+	private bool deathTimerActive;
+	private float deathTimer = 0.0f;
+
+	public Material damagedMaterial;
+	public Material destroyedMaterial;
 
 	private float currentSpeed;
 
@@ -54,6 +60,12 @@ public class FlyingControls : MonoBehaviour {
 		if(Input.GetKey(KeyCode.S)){
 			rigidbody.AddForce(new Vector3(0, -1.0f, 0) * moveSpeed);
 		}
+		if(deathTimerActive){
+			deathTimer += Time.deltaTime;
+			if(deathTimer >= 0.2f){
+				Application.LoadLevel(Application.loadedLevel);
+			}
+		}
 	}
 	void FixedUpdate() {
 		//If we exceed the maximum speed, determine velocity direction and lock it
@@ -88,6 +100,25 @@ public class FlyingControls : MonoBehaviour {
 	}
 	public void resetVelocity(){
 		rigidbody.velocity = new Vector3(0,0,0);
+	}
+	public void damagePlayer(){
+		Debug.Log("Damaging Player");
+
+		switch (timesHit){
+		case 0:
+			GameObject.Find("Glass").renderer.material = damagedMaterial;
+			timesHit++;
+			break;
+		case 1:
+			GameObject.Find("Glass").renderer.material = destroyedMaterial;
+			timesHit++;
+			break;
+		case 2:
+			deathTimerActive = true;
+			timesHit++;
+			break;
+		}
+
 	}
 	public float getCurrentSpeed(){
 		return currentSpeed;

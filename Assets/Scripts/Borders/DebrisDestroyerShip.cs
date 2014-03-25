@@ -15,7 +15,7 @@ public class DebrisDestroyerShip: MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		//If the player has hit this border, reload the level
 		if(other.tag == "Debris"){
-			other.gameObject.GetComponent<Debris>().destroyDebris();
+			other.gameObject.GetComponent<DebrisLevel1>().destroyDebris();
 		}
 	}
 
