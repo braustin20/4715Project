@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 81bd9603c9573104198d4a9d79d85c10, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -501,7 +501,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
       propertyPath: skybox
       value: 
-      objectReference: {fileID: 2100000, guid: 72ed8557bd5924343b59919fd35ed32b, type: 2}
+      objectReference: {fileID: 2100000, guid: a9791c150612ff64e8f712699a2b86f4, type: 2}
     - target: {fileID: 11400000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
       propertyPath: follow
       value: 
@@ -513,6 +513,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
       propertyPath: radius
       value: 6900
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6db9d2fb4117f8543ab7dab0ef882a89, type: 2}
@@ -585,7 +589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &483060426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,7 +605,7 @@ MonoBehaviour:
   radius: 6900
   segments: 32
   shape: 0
-  skybox: {fileID: 2100000, guid: 72ed8557bd5924343b59919fd35ed32b, type: 2}
+  skybox: {fileID: 2100000, guid: a9791c150612ff64e8f712699a2b86f4, type: 2}
   follow: {fileID: 1878794323}
 --- !u!4 &483060427
 Transform:
