@@ -91,6 +91,17 @@ public class InteriorControls : MonoBehaviour {
 			}
 			allowJetpack = true;
 		}
+		if(Input.GetMouseButtonUp(0)){
+			RaycastHit hit;
+			Debug.Log("Clicked Mouse");
+			if(!oculusEnabled){
+				if(Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, 4.0f)){
+					if(hit.collider.gameObject.name == "EscapePodButton"){
+						Application.LoadLevel(Application.loadedLevel + 1);
+					}
+				}
+			}
+		}
 	}
 	void FixedUpdate() {
 		Vector3 tempVelocity = rigidbody.velocity;
