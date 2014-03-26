@@ -1426,7 +1426,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100074}
   serializedVersion: 2
-  m_Mass: 5
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 100000, guid: d336610c1a70c484cbcb8aae9d58302f, type: 2}
-  rotationVelocity: 100000
+  rotationVelocity: 20000
   moveVelocity: 60000
 --- !u!1001 &100100000
 Prefab:
