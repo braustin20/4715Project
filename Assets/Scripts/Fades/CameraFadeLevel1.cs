@@ -39,8 +39,8 @@ public class CameraFadeLevel1 : MonoBehaviour
 			loadTimer += Time.deltaTime;
 		}
 		if(loadTimer >= fadeTime){
+			loadTimer = 0.0f;
 			Debug.Log ("Fading Complete");
-			Debug.Log ("Switching to level: " + (Application.loadedLevel + 1));
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 
