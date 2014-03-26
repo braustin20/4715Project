@@ -111,7 +111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100012
 GameObject:
   m_ObjectHideFlags: 1
@@ -367,7 +367,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
   m_LocalRotation: {x: 0, y: -.0297598299, z: 0, w: .999557078}
-  m_LocalPosition: {x: 3.96880102, y: 4.97348309, z: -80.1608582}
+  m_LocalPosition: {x: 3.96880102, y: 4.97348309, z: -10366.5664}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400028}
@@ -490,8 +490,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: .0248948224, y: .608031631, z: -.793522239, w: .000593983685}
-  m_LocalPosition: {x: -1480.30896, y: -196.314636, z: 5515.61816}
+  m_LocalRotation: {x: .143918857, y: .601030767, z: -.780758917, w: .0920055211}
+  m_LocalPosition: {x: -3729.63428, y: -196.314636, z: 5649.49414}
   m_LocalScale: {x: 18.2357311, y: 23.1081085, z: 18.2357178}
   m_Children:
   - {fileID: 400026}
@@ -525,7 +525,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100036}
   m_LocalRotation: {x: 0, y: .0297598299, z: 0, w: .999557078}
-  m_LocalPosition: {x: 1757.76208, y: 47.2487068, z: 4796.47803}
+  m_LocalPosition: {x: 4186.31689, y: 47.2487068, z: 4651.73828}
   m_LocalScale: {x: 53.0019875, y: 53.0019875, z: 53.0019875}
   m_Children: []
   m_Father: {fileID: 400008}
@@ -603,7 +603,7 @@ Camera:
     width: .499998987
     height: 1
   near clip plane: .150000006
-  far clip plane: 7000
+  far clip plane: 100000
   field of view: 90
   orthographic: 0
   orthographic size: 100
@@ -632,7 +632,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 7000
+  far clip plane: 100000
   field of view: 60
   orthographic: 0
   orthographic size: 100
@@ -661,7 +661,7 @@ Camera:
     width: .5
     height: 1
   near clip plane: .150000006
-  far clip plane: 7000
+  far clip plane: 100000
   field of view: 90
   orthographic: 0
   orthographic size: 100
@@ -1161,9 +1161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36ed8d374fec50449576933634a6650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  maxSpeed: 300
-  minSpeed: 30
+  moveSpeed: 200
+  maxSpeed: 800
+  minSpeed: 550
   damagedMaterial: {fileID: 2100000, guid: 4bb5649cfa44c6646b04a62be2bfa123, type: 2}
   destroyedMaterial: {fileID: 2100000, guid: a0d146d906563d84ebcd8a0d94c745cd, type: 2}
 --- !u!114 &11400002
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   Chromatic: 0
   backgroundColor: {r: .192000002, g: .301999986, b: .474999994, a: 1}
   nearClipPlane: .150000006
-  farClipPlane: 7000
+  farClipPlane: 100000
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
