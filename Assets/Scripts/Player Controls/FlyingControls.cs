@@ -75,7 +75,7 @@ public class FlyingControls : MonoBehaviour {
 				Application.LoadLevel(Application.loadedLevel);
 			}
 		}
-		Debug.Log(rigidbody.velocity.z);
+		//Debug.Log(rigidbody.velocity.z);
 	}
 	void FixedUpdate() {
 		//If we exceed the maximum speed, determine velocity direction and lock it
