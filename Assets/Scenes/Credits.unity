@@ -109,7 +109,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 067bec6a5c777464a952613b6f777f4b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 067bec6a5c777464a952613b6f777f4b, type: 2}
   m_RootGameObject: {fileID: 1052378060}
   m_IsPrefabParent: 0
@@ -191,7 +192,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1052378063}
-  - 114: {fileID: 1052378062}
   - 114: {fileID: 1052378061}
   - 114: {fileID: 1052378064}
   m_Layer: 0
@@ -215,18 +215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFading: 0
   duration: 1
---- !u!114 &1052378062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 067bec6a5c777464a952613b6f777f4b,
-    type: 2}
-  m_PrefabInternal: {fileID: 51106265}
-  m_GameObject: {fileID: 1052378060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28e4b8339c1f44045b46dcc6ca550a9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1052378063
 Transform:
   m_ObjectHideFlags: 0
