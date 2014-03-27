@@ -7580,10 +7580,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c9d00621babed4f89caadae861a22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 2
   maxSpeed: 7
   jumpForce: 500
   oxygen: 100
+  jumpSound: {fileID: 8300000, guid: e3d507af565764d4a902482434723124, type: 3}
+  thrustSound: {fileID: 8300000, guid: eca564396b4cd4d31819c53c2bfa4074, type: 3}
 --- !u!54 &1365844481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7627,7 +7629,7 @@ AudioSource:
   m_GameObject: {fileID: 1365844477}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: ea7473f6a026f4d2889d175e52d93e51, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -12,9 +12,13 @@ public class FloatingControls : MonoBehaviour {
 	public float moveSpeed = 1.0f;
 	public float maxSpeed = 7.0f;
 	public float jumpForce = 500.0f;
+	
 
 	public float oxygen = 120.0f;
 	private float maxOxygen;
+
+	public AudioClip jumpSound;
+	public AudioClip thrustSound;
 
 	private float currentSpeed;
 
@@ -52,6 +56,16 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(oxygen <= 0.0f){
 			Application.LoadLevel(Application.loadedLevel);
+		}
+
+
+		if(Input.GetKeyDown(KeyCode.Q) ||
+		   Input.GetKeyDown(KeyCode.S) ||
+		   Input.GetKeyDown(KeyCode.A) ||
+		   Input.GetKeyDown(KeyCode.D) ||
+		   Input.GetKeyDown(KeyCode.W) ||
+		   Input.GetKeyDown(KeyCode.E) && allowJetpack){
+			audio.PlayOneShot(thrustSound);
 		}
 
 		//Input grabbing - moves relative to current camera
@@ -110,9 +124,10 @@ public class FloatingControls : MonoBehaviour {
 			else{
 				rigidbody.AddForce(FPSCamera.transform.forward * jumpForce);
 			}
-			audio.Play();
+			audio.PlayOneShot(jumpSound);
 			allowJetpack = true;
 		}
+
 	}
 	void FixedUpdate() {
 		Vector3 tempVelocity = rigidbody.velocity;
