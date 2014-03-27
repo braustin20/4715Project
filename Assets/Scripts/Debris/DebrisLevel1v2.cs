@@ -3,7 +3,6 @@ using System.Collections;
 
 public class DebrisLevel1v2: MonoBehaviour {
 	public GameObject explosionEffect;
-	private GameObject spawner;
 	public float rotationVelocity = 500000.0f;
 	public float moveVelocity = 300000.0f;
 
@@ -27,11 +26,5 @@ public class DebrisLevel1v2: MonoBehaviour {
 			GameObject.Destroy(this.gameObject);
 			GameObject.Find("OVRCharacterFlying").GetComponent<FlyingControls>().damagePlayer();
 		}
-	}
-	public void destroyDebris(){
-		//spawner.GetComponent<DebrisSpawner>().removeFromList(this.gameObject);
-	}
-	public void setSpawner(GameObject sp){
-		//spawner = sp;
 	}
 }

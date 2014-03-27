@@ -13,7 +13,7 @@ public class DebrisDestroyer : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter(Collider other){
-		//If the player has hit this border, reload the level
+		//If debris has touched the collider, destroy and respawn it
 		if(other.tag == "Debris"){
 			other.gameObject.GetComponent<DebrisLevel2>().setAllowDestroy(true);
 		}
