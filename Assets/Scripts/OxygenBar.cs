@@ -5,7 +5,7 @@ public class OxygenBar : MonoBehaviour {
 	private float currentOxygen;
 	private float maxOxygen;
 	private GameObject player;
-	private float startingScaleY;
+	private float startingScaleZ;
 	private bool toggledMid;
 
 	// Use this for initialization
@@ -13,7 +13,7 @@ public class OxygenBar : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentOxygen = player.GetComponent<FloatingControls>().oxygen;
 		maxOxygen = currentOxygen;
-		startingScaleY = this.transform.localScale.y;
+		startingScaleZ = this.transform.localScale.z;
 	}
 	
 	// Update is called once per frame
@@ -24,17 +24,17 @@ public class OxygenBar : MonoBehaviour {
 			currentOxygen = player.GetComponent<FloatingControls>().oxygen;
 			//Need to align pivot at the bottom to make it scale in only one direction
 			this.transform.localScale = new Vector3(this.transform.localScale.x,
-													startingScaleY * (currentOxygen/maxOxygen),
-			                                        this.transform.localScale.z);
+			                                        this.transform.localScale.y,
+			                                        startingScaleZ * (currentOxygen/maxOxygen));
 		}
-		Color tempColor = this.transform.FindChild("Health Bar").renderer.material.color;
+		Color tempColor = this.renderer.material.color;
 		if(currentOxygen/maxOxygen <= 0.5f && !toggledMid){
-			this.transform.FindChild("Health Bar").renderer.material.color = new Color(0.5f, 0.3f, 0.08f);
+			this.renderer.material.color = new Color(0.5f, 0.3f, 0.08f);
 			toggledMid = true;
 			Debug.Log(tempColor);
 		}
 		if(currentOxygen/maxOxygen <= 0.3f && tempColor.r != 0.8f){
-			this.transform.FindChild("Health Bar").renderer.material.color = new Color(0.8f, 0.1f, 0.0f);
+			this.renderer.material.color = new Color(0.8f, 0.1f, 0.0f);
 			Debug.Log(tempColor);
 		}
 	}
