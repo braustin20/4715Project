@@ -110,6 +110,7 @@ public class FloatingControls : MonoBehaviour {
 			else{
 				rigidbody.AddForce(FPSCamera.transform.forward * jumpForce);
 			}
+			audio.Play();
 			allowJetpack = true;
 		}
 	}

@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruction Screens/Instructions_Level2.unity
   - enabled: 1
-    path: Assets/Scenes/Level2-2.unity
+    path: Assets/Scenes/Level2v2.unity
   - enabled: 1
     path: Assets/Scenes/Instruction Screens/Instructions_Level3.unity
   - enabled: 1

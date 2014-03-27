@@ -106,10 +106,11 @@ public class CameraFadeLevel1 : MonoBehaviour
 		if(other.gameObject.tag == "Player" || other.gameObject.tag == "Ship"){
 			Debug.Log ("Fade Started");
 			//Fire a laser ending the level
-			GameObject tempBeam = GameObject.Instantiate(beam, GameObject.Find("AlienCraft").transform.position + new Vector3(-56.0f, 0.0f, -73.0f),
-			                                             beam.transform.rotation) as GameObject;
-			tempBeam.transform.parent = GameObject.Find("AlienCraft").transform;
-			tempBeam.transform.rotation = beam.transform.rotation;
+			GameObject alienCraft = GameObject.Find("AlienCraft");
+			beam.SetActive(true);
+
+			alienCraft.audio.Play();
+
 			StartFade (Color.black, fadeTime);
 			isFading = true;
 			/*

@@ -7,9 +7,10 @@ public class FlyingControls : MonoBehaviour {
 	private bool oculusEnabled;
 	private bool allowJetpack;
 
-	public float moveSpeed = 100.0f;
-	public float maxSpeed = 100.0f;
-	public float minSpeed = 30.0f;
+	public float moveSpeed = 200.0f;
+	public float maxSpeed = 800.0f;
+	public float minSpeed = 550.0f;
+	public float acceleration = 200.0f;
 
 	private int timesHit = 0;
 	private bool deathTimerActive;
@@ -40,10 +41,10 @@ public class FlyingControls : MonoBehaviour {
 
 		//Input grabbing - doesn't move relative to current camera
 		if(Input.GetKey(KeyCode.LeftShift) && !checkMaxSpeed()){
-			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * moveSpeed);
+			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * acceleration);
 		}
 		if(!Input.GetKey(KeyCode.LeftShift) && !checkMinSpeed()){
-			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * moveSpeed);
+			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * acceleration);
 		}
 		if(Input.GetKey(KeyCode.LeftControl) && !checkMinSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * moveSpeed);
@@ -66,6 +67,7 @@ public class FlyingControls : MonoBehaviour {
 				Application.LoadLevel(Application.loadedLevel);
 			}
 		}
+		Debug.Log(rigidbody.velocity.z);
 	}
 	void FixedUpdate() {
 		//If we exceed the maximum speed, determine velocity direction and lock it
