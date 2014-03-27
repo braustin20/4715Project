@@ -8,6 +8,7 @@ public class DebrisSpawnerLevel2: MonoBehaviour {
 	public float rotationVelocity = 20.0f;
 	public float velocity = 4000.0f;
 	public float spawnInterval = 1.0f;
+	public float radius = 5.0f;
 
 	private float timer = 0.0f;
 	private Vector3 spawnPosition;
@@ -36,9 +37,9 @@ public class DebrisSpawnerLevel2: MonoBehaviour {
 		aliveDebris.Add(tempDebris);
 
 		tempDebris.transform.position = new Vector3(
-			spawnPosition.x + (Random.Range(-5.0f, 5.0f)), 
-			spawnPosition.y + (Random.Range(-5.0f, 5.0f)), 
-			spawnPosition.z + (0.0f));
+			spawnPosition.x + (Random.Range(-radius, radius)), 
+			spawnPosition.y + (Random.Range(-radius, radius)), 
+			spawnPosition.z + (Random.Range(-radius, radius)));
 		//Push the debris towards the player
 		//Apply a set force, but control speed by rigidbody weight in the inspector
 		tempDebris.rigidbody.AddForce(transform.forward * velocity);
