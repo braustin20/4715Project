@@ -12,13 +12,21 @@ public class FloatingControls : MonoBehaviour {
 	public float moveSpeed = 1.0f;
 	public float maxSpeed = 7.0f;
 	public float jumpForce = 500.0f;
-	
+
+	private int timesHit = 0;
+	private bool deathTimerActive;
+	private float deathTimer = 0.0f;
 
 	public float oxygen = 120.0f;
 	private float maxOxygen;
 
 	public AudioClip jumpSound;
 	public AudioClip thrustSound;
+
+	public Material damagedMaterial;
+	public Material destroyedMaterial;
+	private Material startMaterial;
+
 
 	private float currentSpeed;
 
@@ -32,6 +40,8 @@ public class FloatingControls : MonoBehaviour {
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		OVRCamera = gameManager.getOVRCamera();
 		FPSCamera = gameManager.getFPSCamera();
+
+		startMaterial = GameObject.Find("Glass").renderer.material;
 	}
 	
 	// Update is called once per frame
@@ -127,6 +137,12 @@ public class FloatingControls : MonoBehaviour {
 			audio.PlayOneShot(jumpSound);
 			allowJetpack = true;
 		}
+		if(deathTimerActive){
+			deathTimer += Time.deltaTime;
+			if(deathTimer >= 0.2f){
+				Application.LoadLevel(Application.loadedLevel);
+			}
+		}
 
 	}
 	void FixedUpdate() {
@@ -141,6 +157,31 @@ public class FloatingControls : MonoBehaviour {
 			resetVelocity();
 			allowJetpack = false;
 		}
+	}
+	public void damagePlayer(){
+		Debug.Log("Damaging Player");
+
+		Material[] materialList = new Material[2];
+		
+		switch (timesHit){
+		case 0:
+			materialList[0] = startMaterial;
+			materialList[1] = damagedMaterial;
+			GameObject.Find("Glass").renderer.materials = materialList;
+			timesHit++;
+			break;
+		case 1:
+			materialList[0] = startMaterial;
+			materialList[1] = destroyedMaterial;
+			GameObject.Find("Glass").renderer.materials = materialList;
+			timesHit++;
+			break;
+		case 2:
+			deathTimerActive = true;
+			timesHit++;
+			break;
+		}
+		
 	}
 	public void resetVelocity(){
 		rigidbody.velocity = new Vector3(0,0,0);

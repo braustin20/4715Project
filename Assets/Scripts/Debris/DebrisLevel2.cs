@@ -30,6 +30,7 @@ public class DebrisLevel2: MonoBehaviour {
 			//Place the explosion in front of the ship by 3 units
 			GameObject.Instantiate(explosionEffect, other.transform.position + Vector3.forward * 1, this.transform.rotation);
 			GameObject.Destroy(this.gameObject);
+			GameObject.Find("OVRCharacterFloating").GetComponent<FloatingControls>().damagePlayer();
 		}
 	}
 	public void setSpawner(GameObject sp){
