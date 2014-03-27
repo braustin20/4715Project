@@ -7580,7 +7580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c9d00621babed4f89caadae861a22e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 7
   maxSpeed: 7
   jumpForce: 500
   oxygen: 100

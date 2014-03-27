@@ -16,10 +16,10 @@ public class LaserGrow : MonoBehaviour {
 	void Update () {
 		if(!finalReached){
 			if(particleEmitter.maxSize < 50.0f  && particleEmitter.emit){
-				this.particleEmitter.maxSize += 0.01f;
-				this.particleEmitter.minSize += 0.01f;
-				this.particleEmitter.maxEmission += 0.01f;
-				this.particleEmitter.minEmission += 0.01f;
+				this.particleEmitter.maxSize += 0.03f;
+				this.particleEmitter.minSize += 0.03f;
+				this.particleEmitter.maxEmission += 0.03f;
+				this.particleEmitter.minEmission += 0.03f;
 			}
 			else if(particleEmitter.maxSize >= 50.0f  && particleEmitter.emit){
 				finalReached = true;

@@ -16,6 +16,8 @@ public class FlyingControls : MonoBehaviour {
 	private bool deathTimerActive;
 	private float deathTimer = 0.0f;
 
+	private GameObject cockpit;
+
 	public Material damagedMaterial;
 	public Material destroyedMaterial;
 
@@ -26,7 +28,7 @@ public class FlyingControls : MonoBehaviour {
 
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
+		cockpit = GameObject.Find("Cockpit");
 
 		rigidbody.AddForce(new Vector3(0, 0, 1) * minSpeed);
 	}
@@ -42,9 +44,15 @@ public class FlyingControls : MonoBehaviour {
 		//Input grabbing - doesn't move relative to current camera
 		if(Input.GetKey(KeyCode.LeftShift) && !checkMaxSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, 1.0f) * acceleration);
+			if(!cockpit.audio.isPlaying){
+				cockpit.audio.Play();
+			}
 		}
 		if(!Input.GetKey(KeyCode.LeftShift) && !checkMinSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * acceleration);
+			if(cockpit.audio.isPlaying){
+				cockpit.audio.Stop();
+			}
 		}
 		if(Input.GetKey(KeyCode.LeftControl) && !checkMinSpeed()){
 			rigidbody.AddForce(new Vector3(0, 0, -1.0f) * moveSpeed);
