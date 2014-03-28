@@ -61,6 +61,12 @@ public class GameManager : MonoBehaviour {
 			Application.Quit();
 		}
 	}
+	public void pause(){
+		Time.timeScale = 0.0f;
+	}
+	public void resume(){
+		Time.timeScale = 1.0f;
+	}
 	//------Getters and Setters-----
 	public bool isOculusEnabled(){
 		return oculus;
