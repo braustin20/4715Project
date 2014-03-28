@@ -10151,7 +10151,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1710540516}
   - 33: {fileID: 1710540519}
-  - 64: {fileID: 1710540518}
   - 23: {fileID: 1710540517}
   m_Layer: 4
   m_Name: o2text
@@ -10159,7 +10158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1710540516
 Transform:
   m_ObjectHideFlags: 0
@@ -10193,20 +10192,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1710540518
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6400002, guid: fb703216a8144f44184236ce68df3b47,
-    type: 2}
-  m_PrefabInternal: {fileID: 1786375720}
-  m_GameObject: {fileID: 1710540515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1710540519
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10768,7 +10753,12 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999557078
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 100036, guid: fb703216a8144f44184236ce68df3b47, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: fb703216a8144f44184236ce68df3b47, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fb703216a8144f44184236ce68df3b47, type: 2}
   m_RootGameObject: {fileID: 1365844477}
   m_IsPrefabParent: 0
