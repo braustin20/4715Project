@@ -14,6 +14,6 @@ public class Resume : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
-		GameObject.Find("GameManager").resume(); 
+		GameObject.Find("GameManager").GetComponent<GameManager>().resume(); 
 	}  
 }
