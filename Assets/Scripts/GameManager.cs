@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour {
 	private GameObject OVRCamera;
 	private GameObject FPSCamera;
 
+	private bool paused;
+
 	private bool oculus;
 
 	
@@ -58,14 +60,37 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Escape)){
-			Application.Quit();
+			if(!paused){
+				pause();
+			}
+			else{
+				resume();
+			}
 		}
 	}
 	public void pause(){
 		Time.timeScale = 0.0f;
+		paused = true;
+		Screen.showCursor = true;
+		Screen.lockCursor = false;
+		if(oculus){
+			OVRCamera.GetComponent<MouseLook>().enabled = false;
+		}
+		else{
+			FPSCamera.GetComponent<MouseLook>().enabled = false;
+		}
 	}
 	public void resume(){
 		Time.timeScale = 1.0f;
+		paused = false;
+		Screen.showCursor = false;
+		Screen.lockCursor = true;
+		if(oculus){
+			OVRCamera.GetComponent<MouseLook>().enabled = true;
+		}
+		else{
+			FPSCamera.GetComponent<MouseLook>().enabled = true;
+		}
 	}
 	//------Getters and Setters-----
 	public bool isOculusEnabled(){
