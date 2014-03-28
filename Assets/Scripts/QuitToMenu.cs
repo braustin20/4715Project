@@ -14,6 +14,7 @@ public class QuitToMenu : MonoBehaviour {
 	}
 
 	void OnMouseDown(){
+		Time.timeScale = 1.0f;
 		Application.LoadLevel(0); 
 	}  
 }

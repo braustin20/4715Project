@@ -96,7 +96,7 @@ public class InteriorControls : MonoBehaviour {
 			Debug.Log("Clicked Mouse");
 			if(!oculusEnabled){
 				if(Physics.Raycast(FPSCamera.transform.position, FPSCamera.transform.forward, out hit, 4.0f)){
-					if(hit.collider.gameObject.name == "EscapePodButton"){
+					if(hit.collider.gameObject.name == "EscapePod"){
 						Application.LoadLevel(Application.loadedLevel + 1);
 					}
 				}
