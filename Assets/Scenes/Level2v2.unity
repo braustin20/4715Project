@@ -4498,6 +4498,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 067bec6a5c777464a952613b6f777f4b, type: 2}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 100000, guid: 67a5f6415471a3a4fb062b02b894d848, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 067bec6a5c777464a952613b6f777f4b, type: 2}
   m_RootGameObject: {fileID: 1239076955}
@@ -7220,6 +7224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e4b8339c1f44045b46dcc6ca550a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 100000, guid: 67a5f6415471a3a4fb062b02b894d848, type: 2}
 --- !u!4 &1239076957
 Transform:
   m_ObjectHideFlags: 0

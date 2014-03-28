@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour {
 	private GameObject OVRCamera;
 	private GameObject FPSCamera;
 
+	public GameObject pauseMenu;
+	private GameObject spawnedMenu;
+
 	private bool paused;
 
 	private bool oculus;
@@ -69,16 +72,26 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	public void pause(){
+		FPSCamera.GetComponent<MouseLook>().enabled = false;
+		if(oculus){
+			if(FPSCamera.transform.parent.GetComponent<MouseLook>() != null){
+				FPSCamera.transform.parent.GetComponent<MouseLook>().enabled = false;
+			}
+			OVRCamera.GetComponent<MouseLook>().enabled = false;
+		}
+		else{
+			if(FPSCamera.transform.parent.GetComponent<MouseLook>() != null){
+				FPSCamera.transform.parent.GetComponent<MouseLook>().enabled = false;
+			}
+			FPSCamera.GetComponent<MouseLook>().enabled = false;
+
+		}
 		Time.timeScale = 0.0f;
 		paused = true;
 		Screen.showCursor = true;
 		Screen.lockCursor = false;
-		if(oculus){
-			OVRCamera.GetComponent<MouseLook>().enabled = false;
-		}
-		else{
-			FPSCamera.GetComponent<MouseLook>().enabled = false;
-		}
+		spawnedMenu = GameObject.Instantiate(pauseMenu, FPSCamera.transform.position + ((FPSCamera.transform.forward) * 0.35f), FPSCamera.transform.rotation) as GameObject;
+
 	}
 	public void resume(){
 		Time.timeScale = 1.0f;
@@ -86,11 +99,18 @@ public class GameManager : MonoBehaviour {
 		Screen.showCursor = false;
 		Screen.lockCursor = true;
 		if(oculus){
+			if(FPSCamera.transform.parent.GetComponent<MouseLook>() != null){
+				FPSCamera.transform.parent.GetComponent<MouseLook>().enabled = true;
+			}
 			OVRCamera.GetComponent<MouseLook>().enabled = true;
 		}
 		else{
+			if(FPSCamera.transform.parent.GetComponent<MouseLook>() != null){
+				FPSCamera.transform.parent.GetComponent<MouseLook>().enabled = true;
+			}
 			FPSCamera.GetComponent<MouseLook>().enabled = true;
 		}
+		GameObject.Destroy(spawnedMenu);
 	}
 	//------Getters and Setters-----
 	public bool isOculusEnabled(){
