@@ -121,13 +121,13 @@ AudioSource:
   m_GameObject: {fileID: 1075164209}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: f198fde8ba755e54bbf0814e53ad357e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a2fbf34bf314249f094e74b955262891, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .185000002
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 133
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -294,7 +294,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d3c88a231dab2604ebf87717c0ae6382, type: 2}
+  - {fileID: 2100000, guid: 0458d1ae1711f4743880732c4c4a6c35, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
