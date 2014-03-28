@@ -9,9 +9,17 @@ public class RotatingDebris: MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddTorque(Random.Range(0, rotationVelocity),
-		                    Random.Range(0, rotationVelocity),
-		                    Random.Range(0, rotationVelocity));
+		float randomX = Random.Range(-rotationVelocity, rotationVelocity);
+		Debug.Log ("Random X: " + randomX);
+		float randomY = Random.Range(-rotationVelocity, rotationVelocity);
+		Debug.Log ("Random Y: " + randomY);
+		float randomZ = Random.Range(-rotationVelocity, rotationVelocity);
+		Debug.Log ("Random Z: " + randomZ);
+
+
+
+		rigidbody.
+		rigidbody.AddRelativeTorque(randomX, randomY, randomZ);
 		//rigidbody.AddForce(transform.forward * moveVelocity);
 	}
 	
