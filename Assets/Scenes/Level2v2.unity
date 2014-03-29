@@ -6572,8 +6572,8 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.10000002
-  m_Range: 29.4699993
+  m_Intensity: 1.29999995
+  m_Range: 58.2200012
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -12462,8 +12462,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.98000002, y: 1.79999995, z: 1.92479753}
-  m_Center: {x: .00640761806, y: 0, z: -.362395644}
+  m_Size: {x: 27.0093746, y: 19.3198929, z: 12.1428566}
+  m_Center: {x: -12.0082912, y: -1.60699022, z: 2.45273566}
 --- !u!4 &2095341050
 Transform:
   m_ObjectHideFlags: 0
