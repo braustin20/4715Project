@@ -18,5 +18,8 @@ public class Cutscene : MonoBehaviour {
 		if(timer >= duration){
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
+		if(Input.GetKeyUp(KeyCode.Return)) {
+			Application.LoadLevel(Application.loadedLevel + 1);
+		}
 	}
 }
