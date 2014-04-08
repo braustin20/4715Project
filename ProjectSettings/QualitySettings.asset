@@ -120,11 +120,4 @@ QualitySettings:
     maximumLODLevel: 0
     particleRaycastBudget: 4096
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality:
-    Android: 4
-    BlackBerry: 4
-    Standalone: 4
-    WP8: 4
-    Web: 4
-    Windows Store Apps: 4
-    iPhone: 4
+  m_PerPlatformDefaultQuality: {}
