@@ -156,6 +156,27 @@ public class FloatingControls : MonoBehaviour {
 		if(other.collider.gameObject.tag == "GrappleObj"){
 			resetVelocity();
 			allowJetpack = false;
+
+			Debug.Log("Making Transparent");
+			Color tempColor = other.collider.gameObject.GetComponentInChildren<Renderer>().material.color;
+			Debug.Log(tempColor);
+
+			other.collider.gameObject.GetComponentInChildren<Renderer>().material.color = new Color(tempColor.r,
+			                                                              tempColor.g,
+			                                                              tempColor.b,
+			                                                              0.3f);
+		}
+	}
+	void OnTriggerExit(Collider other){
+		if(other.collider.gameObject.tag == "GrappleObj"){	
+			Debug.Log("Making Opaque");
+			Color tempColor = other.collider.gameObject.GetComponentInChildren<Renderer>().material.color;
+			Debug.Log(tempColor);
+			
+			other.collider.gameObject.GetComponentInChildren<Renderer>().material.color = new Color(tempColor.r,
+			                                                                                        tempColor.g,
+			                                                                                        tempColor.b,
+			                                                                                        1.0f);
 		}
 	}
 	public void damagePlayer(){
