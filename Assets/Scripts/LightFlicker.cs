@@ -27,7 +27,7 @@ public class LightFlicker : MonoBehaviour {
 					light.enabled = false;
 				}
 			}
-			duration = Random.Range(0.0f, 1.0f);
+			duration = Random.Range(0.0f, .5f);
 			timer = 0.0f;
 		}
 	}
