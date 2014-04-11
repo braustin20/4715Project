@@ -38,10 +38,11 @@ public class FloatingControls : MonoBehaviour {
 
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-		OVRCamera = gameManager.getOVRCamera();
+		OVRCamera = GameObject.Find("CameraRight");
 		FPSCamera = gameManager.getFPSCamera();
 
 		startMaterial = GameObject.Find("Glass").renderer.material;
+
 	}
 	
 	// Update is called once per frame
