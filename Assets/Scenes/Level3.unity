@@ -2301,7 +2301,7 @@ MonoBehaviour:
   EyeCenterPosition: {x: 0, y: .150000006, z: .0900000036}
   UsePlayerEyeHeight: 0
   FollowOrientation: {fileID: 1365844478}
-  TrackerRotatesY: 0
+  TrackerRotatesY: 1
   PortraitMode: 0
   EnableOrientation: 1
   PredictionOn: 1
@@ -2491,7 +2491,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0805210546, y: -.0696788803, z: -.0233779643}
+  m_ConnectedAnchor: {x: -.0805210471, y: -.0696788803, z: -.0233779661}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -3841,7 +3841,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.26643751e-08, y: -3.19738945e-07, z: .135289326}
+  m_ConnectedAnchor: {x: -4.63355931e-08, y: -2.84348687e-07, z: .135289326}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -4601,7 +4601,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 155356449}
-  m_LocalRotation: {x: .0787932426, y: .995883763, z: -.0035336758, w: .0446628481}
+  m_LocalRotation: {x: .0787932351, y: .995883703, z: -.00353367557, w: .0446628444}
   m_LocalPosition: {x: -.0195337329, y: 3.3981064e-16, z: -1.05471186e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5086,7 +5086,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400016, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 171868343}
-  m_LocalRotation: {x: .0787932426, y: .995883763, z: -.0035336758, w: .0446628481}
+  m_LocalRotation: {x: .0787932351, y: .995883703, z: -.00353367557, w: .0446628444}
   m_LocalPosition: {x: .0195332039, y: -1.68480756e-06, z: -1.88304341e-08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -6532,7 +6532,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.326930135, y: -.196065545, z: -.0599175319}
+  m_ConnectedAnchor: {x: -.326930135, y: -.196065545, z: -.0599175133}
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_LowTwistLimit:
     limit: -70
@@ -7281,7 +7281,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.326925218, y: .196065232, z: -.0599185079}
+  m_ConnectedAnchor: {x: -.326925188, y: .196065262, z: -.0599185042}
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_LowTwistLimit:
     limit: -70
@@ -8967,7 +8967,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400018, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 284487193}
-  m_LocalRotation: {x: .0870693251, y: .995896995, z: .00214797794, w: -.0245685223}
+  m_LocalRotation: {x: .0870693177, y: .995896935, z: .00214797771, w: -.0245685205}
   m_LocalPosition: {x: .0247611273, y: -6.89542367e-06, z: 6.31538022e-09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12151,7 +12151,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.404305965, y: 1.04308128e-07, z: 8.3935447e-07}
+  m_ConnectedAnchor: {x: -.404305995, y: 1.03942511e-07, z: 8.24416588e-07}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -80
@@ -12467,7 +12467,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0805215091, y: -.0696787685, z: -.0233787391}
+  m_ConnectedAnchor: {x: -.0805215091, y: -.0696787685, z: -.023378741}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -14998,7 +14998,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .404306829, y: 3.95346433e-07, z: -2.48663127e-07}
+  m_ConnectedAnchor: {x: .404306829, y: 3.95524239e-07, z: -2.72870636e-07}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -80
@@ -15111,7 +15111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887d94c6444e6e64e8139e94c45da96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 800
+  radius: 6900
   segments: 32
   shape: 0
   skybox: {fileID: 2100000, guid: 72ed8557bd5924343b59919fd35ed32b, type: 2}
@@ -17767,7 +17767,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 203fdd61e599744c781925d5fc7a82c6, type: 3}
   m_PrefabInternal: {fileID: 843903599}
   m_GameObject: {fileID: 569309913}
-  m_LocalRotation: {x: -.129504979, y: -.505571306, z: -.042843435, w: .85193336}
+  m_LocalRotation: {x: -.129504994, y: -.505571365, z: -.0428434387, w: .851933479}
   m_LocalPosition: {x: -38.9246521, y: 32.2761421, z: 82.8610382}
   m_LocalScale: {x: 14.0029545, y: 14.0029526, z: 14.0029516}
   m_Children:
@@ -19345,7 +19345,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.404307038, y: -3.30386683e-07, z: -1.26915984e-06}
+  m_ConnectedAnchor: {x: -.404307038, y: -3.30548232e-07, z: -1.26905809e-06}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -80
@@ -21767,7 +21767,7 @@ GameObject:
   - 4: {fileID: 701561077}
   - 95: {fileID: 701561078}
   m_Layer: 0
-  m_Name: FourwayHall
+  m_Name: FourWayHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28085,7 +28085,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400030, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 860306217}
-  m_LocalRotation: {x: .00681818556, y: .945311248, z: .019801449, w: -.325496793}
+  m_LocalRotation: {x: .00681818509, y: .945311189, z: .0198014472, w: -.325496763}
   m_LocalPosition: {x: -.855602503, y: 1.04042327, z: -.889772475}
   m_LocalScale: {x: 9.19260693, y: 9.19260693, z: 9.19260693}
   m_Children: []
@@ -29745,7 +29745,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400006, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 916269247}
-  m_LocalRotation: {x: .0870693251, y: .995896995, z: .00214797794, w: -.0245685223}
+  m_LocalRotation: {x: .0870693177, y: .995896935, z: .00214797771, w: -.0245685205}
   m_LocalPosition: {x: -.024762053, y: 7.88973934e-17, z: -1.88737916e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -31825,7 +31825,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400070, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 977499275}
-  m_LocalRotation: {x: .0101621412, y: .0553707778, z: -.0235605408, w: .998136163}
+  m_LocalRotation: {x: .0101621402, y: .0553707741, z: -.0235605389, w: .998136103}
   m_LocalPosition: {x: .0192669835, y: -4.27452642e-06, z: -3.30103305e-08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32089,7 +32089,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.226351902, y: 4.27855412e-07, z: 8.00937414e-07}
+  m_ConnectedAnchor: {x: -.226351991, y: 4.15263429e-07, z: 8.45577517e-07}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -90
@@ -40168,7 +40168,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.226352066, y: -4.1227031e-07, z: -1.3038516e-08}
+  m_ConnectedAnchor: {x: -.226352036, y: -4.09406283e-07, z: -7.7764426e-09}
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_LowTwistLimit:
     limit: -90
@@ -42465,7 +42465,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.326929003, y: -.196065903, z: -.0599196181}
+  m_ConnectedAnchor: {x: -.326929033, y: -.196065903, z: -.0599196181}
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_LowTwistLimit:
     limit: -70
@@ -42590,7 +42590,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.4746539, y: -3.30648874e-07, z: -.143089056}
+  m_ConnectedAnchor: {x: -.4746539, y: -3.30524045e-07, z: -.143089056}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -40
@@ -46792,7 +46792,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .226351932, y: 6.02958607e-07, z: 9.74163413e-07}
+  m_ConnectedAnchor: {x: .226351961, y: 6.30774991e-07, z: 9.06604498e-07}
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_LowTwistLimit:
     limit: -90
@@ -48959,7 +48959,7 @@ GameObject:
   - 4: {fileID: 1561216265}
   - 95: {fileID: 1561216266}
   m_Layer: 0
-  m_Name: FourwayHall
+  m_Name: FourWayHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49759,7 +49759,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400114, guid: f85da006cb7f61e459b15f6ac8b66c7e, type: 2}
   m_PrefabInternal: {fileID: 795944819}
   m_GameObject: {fileID: 1585010603}
-  m_LocalRotation: {x: .0101621412, y: .0553707778, z: -.0235605408, w: .998136163}
+  m_LocalRotation: {x: .0101621402, y: .0553707741, z: -.0235605389, w: .998136103}
   m_LocalPosition: {x: -.0192670804, y: -6.21239705e-17, z: 3.0531133e-18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -50079,7 +50079,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 203fdd61e599744c781925d5fc7a82c6, type: 3}
   m_PrefabInternal: {fileID: 1741319083}
   m_GameObject: {fileID: 1602835544}
-  m_LocalRotation: {x: -.129504979, y: -.505571306, z: -.042843435, w: .85193336}
+  m_LocalRotation: {x: -.129504994, y: -.505571365, z: -.0428434387, w: .851933479}
   m_LocalPosition: {x: -37.4084702, y: 31.4309444, z: 52.2529259}
   m_LocalScale: {x: 14.0029545, y: 14.0029526, z: 14.0029516}
   m_Children:
@@ -50254,6 +50254,10 @@ Prefab:
     - target: {fileID: 11400010, guid: e378451332860fe40a1237358cbaa967, type: 2}
       propertyPath: sensitivityX
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e378451332860fe40a1237358cbaa967, type: 2}
+      propertyPath: TrackerRotatesY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e378451332860fe40a1237358cbaa967, type: 2}
@@ -52337,7 +52341,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .226352215, y: -2.9966759e-07, z: 8.00937414e-08}
+  m_ConnectedAnchor: {x: .22635217, y: -2.93132274e-07, z: 8.4618712e-08}
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_LowTwistLimit:
     limit: -90
@@ -53434,7 +53438,7 @@ GameObject:
   - 4: {fileID: 1718845001}
   - 95: {fileID: 1718845002}
   m_Layer: 0
-  m_Name: FourwayHall
+  m_Name: FourWayHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54554,7 +54558,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .404305875, y: 3.65544111e-08, z: -1.32806599e-06}
+  m_ConnectedAnchor: {x: .404305845, y: 3.60819179e-08, z: -1.30798219e-06}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -80
@@ -55500,7 +55504,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.474654555, y: 1.46277856e-07, z: -.143090606}
+  m_ConnectedAnchor: {x: -.474654675, y: 1.57761065e-07, z: -.143090621}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -40
@@ -62352,7 +62356,7 @@ GameObject:
   - 4: {fileID: 2024085188}
   - 95: {fileID: 2024085189}
   m_Layer: 0
-  m_Name: FourwayHall
+  m_Name: FourWayHall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62649,7 +62653,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .0805216432, y: -.0696787462, z: -.0233779643}
+  m_ConnectedAnchor: {x: .0805216432, y: -.0696787462, z: -.0233779661}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -65258,7 +65262,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .0805216432, y: -.0696778223, z: -.0233778451}
+  m_ConnectedAnchor: {x: .0805216432, y: -.0696777776, z: -.0233778469}
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_LowTwistLimit:
     limit: -20
@@ -66128,7 +66132,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.39897239e-07, y: 1.31566367e-06, z: .13528873}
+  m_ConnectedAnchor: {x: 1.39894595e-07, y: 1.31566378e-06, z: .13528873}
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_LowTwistLimit:
     limit: -20

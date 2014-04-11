@@ -39,9 +39,9 @@ public class FloatingControls : MonoBehaviour {
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		OVRCamera = GameObject.Find("CameraRight");
+		//OVRCamera = gameManager.getOVRCamera();
 		FPSCamera = gameManager.getFPSCamera();
 
-		startMaterial = GameObject.Find("Glass").renderer.material;
 
 	}
 	
@@ -144,7 +144,7 @@ public class FloatingControls : MonoBehaviour {
 				Application.LoadLevel(Application.loadedLevel);
 			}
 		}
-
+		Debug.DrawRay(OVRCamera.transform.position, (OVRCamera.transform.forward * 100), Color.green, 0.2f);
 	}
 	void FixedUpdate() {
 		Vector3 tempVelocity = rigidbody.velocity;
