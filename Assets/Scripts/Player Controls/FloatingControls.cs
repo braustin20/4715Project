@@ -38,7 +38,7 @@ public class FloatingControls : MonoBehaviour {
 
 		//Find and store the camera objects and manager
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-		OVRCamera = GameObject.Find("CameraRight");
+		OVRCamera = gameManager.getRightCamera();
 		//OVRCamera = gameManager.getOVRCamera();
 		FPSCamera = gameManager.getFPSCamera();
 
@@ -52,6 +52,7 @@ public class FloatingControls : MonoBehaviour {
 
 		//Before any Input is processed, check to see if Oculus is enabled
 		oculusEnabled = gameManager.isOculusEnabled();
+		Debug.Log (oculusEnabled);
 
 		if(oxygen/maxOxygen >= 0.5f){
 			oxygen -= Time.deltaTime;
@@ -82,7 +83,7 @@ public class FloatingControls : MonoBehaviour {
 		//Input grabbing - moves relative to current camera
 		if(Input.GetKey(KeyCode.W) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(OVRCamera.transform.forward * moveSpeed);
+				rigidbody.AddForce(GameObject.Find("OVRLight").transform.forward * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(FPSCamera.transform.forward * moveSpeed);
@@ -90,7 +91,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.S) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(-OVRCamera.transform.forward * moveSpeed);
+				rigidbody.AddForce(-GameObject.Find("OVRLight").transform.forward * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(-FPSCamera.transform.forward * moveSpeed);
@@ -98,7 +99,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.A) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(-OVRCamera.transform.right * moveSpeed);
+				rigidbody.AddForce(-GameObject.Find("OVRLight").transform.right * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(-FPSCamera.transform.right * moveSpeed);
@@ -106,7 +107,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.D) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(OVRCamera.transform.right * moveSpeed);
+				rigidbody.AddForce(GameObject.Find("OVRLight").transform.right * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(FPSCamera.transform.right * moveSpeed);
@@ -114,7 +115,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.E) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(OVRCamera.transform.up * moveSpeed);
+				rigidbody.AddForce(GameObject.Find("OVRLight").transform.up * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(FPSCamera.transform.up * moveSpeed);
@@ -122,7 +123,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.Q) && allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(-OVRCamera.transform.up * moveSpeed);
+				rigidbody.AddForce(-GameObject.Find("OVRLight").transform.up * moveSpeed);
 			}
 			else{
 				rigidbody.AddForce(-FPSCamera.transform.up * moveSpeed);
@@ -130,7 +131,7 @@ public class FloatingControls : MonoBehaviour {
 		}
 		if(Input.GetKeyDown(KeyCode.Space) && !allowJetpack){
 			if(oculusEnabled){
-				rigidbody.AddForce(OVRCamera.transform.forward * jumpForce);
+				rigidbody.AddForce(GameObject.Find("OVRLight").transform.forward * jumpForce);
 			}
 			else{
 				rigidbody.AddForce(FPSCamera.transform.forward * jumpForce);
@@ -144,7 +145,6 @@ public class FloatingControls : MonoBehaviour {
 				Application.LoadLevel(Application.loadedLevel);
 			}
 		}
-		Debug.DrawRay(OVRCamera.transform.position, (OVRCamera.transform.forward * 100), Color.green, 0.2f);
 	}
 	void FixedUpdate() {
 		Vector3 tempVelocity = rigidbody.velocity;

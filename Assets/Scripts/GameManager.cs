@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 	private GameObject OVRCamera;
+	private GameObject OVRRightCamera;
 	private GameObject FPSCamera;
 
 	//Optional
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		//Find the two kinds of cameras
 		OVRCamera = GameObject.Find("OVRCameraController");
+		OVRRightCamera = GameObject.Find("CameraRight");
 		FPSCamera = GameObject.Find("FPS Character");
 
 		if(Application.loadedLevel == 5){
@@ -157,5 +159,11 @@ public class GameManager : MonoBehaviour {
 			OVRCamera = GameObject.Find("OVRCameraController");
 		}
 		return OVRCamera;
+	}
+	public GameObject getRightCamera(){
+		if(OVRRightCamera == null){
+			OVRRightCamera = GameObject.Find("RightCamera");
+		}
+		return OVRRightCamera;
 	}
 }
