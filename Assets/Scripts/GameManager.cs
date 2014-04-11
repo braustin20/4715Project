@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 	public void pause(){
-		FPSCamera.GetComponent<MouseLook>().enabled = false;
+		//FPSCamera.GetComponent<MouseLook>().enabled = false;
 		if(oculus){
 			if(FPSCamera.transform.parent.GetComponent<MouseLook>() != null){
 				FPSCamera.transform.parent.GetComponent<MouseLook>().enabled = false;
@@ -118,6 +118,7 @@ public class GameManager : MonoBehaviour {
 		GameObject.Destroy(spawnedMenu);
 	}
 	private void toggleOculus(){
+		if(!paused){
 		if(oculus == true){
 			oculus = false;
 			OVRCamera.gameObject.SetActive(false);
@@ -142,6 +143,7 @@ public class GameManager : MonoBehaviour {
 				OVRHelmet.SetActive(true);
 			}
 			PlayerPrefs.SetInt("Oculus Enabled", 1);
+		}
 		}
 	}
 	//------Getters and Setters-----
