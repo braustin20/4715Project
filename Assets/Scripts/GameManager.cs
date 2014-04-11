@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
 		}
 
 		//If this is a build of the game, hide and lock the cursor
-		if(Application.isPlaying && !Application.isEditor){
+		if(Application.isPlaying || Application.isEditor){
 			Screen.showCursor = false;
 			Screen.lockCursor = true;
 		}

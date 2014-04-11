@@ -25,7 +25,7 @@ public class FloatingControls : MonoBehaviour {
 
 	public Material damagedMaterial;
 	public Material destroyedMaterial;
-	private Material startMaterial;
+	public Material startMaterial;
 
 
 	private float currentSpeed;
