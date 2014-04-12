@@ -15,6 +15,7 @@ public class InstructionScreen : MonoBehaviour {
 	public void OnGUI() {
 		if(Event.current.type == EventType.KeyDown || Event.current.type == EventType.MouseDown) {
 			Application.LoadLevel(Application.loadedLevel + 1);
+			audio.Play();
 		}
 	}
 }
