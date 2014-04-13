@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887d94c6444e6e64e8139e94c45da96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 6900
+  radius: 4900
   segments: 32
   shape: 0
   skybox: {fileID: 2100000, guid: 152d951f2a7f3a845a7a37cd509468e3, type: 2}
