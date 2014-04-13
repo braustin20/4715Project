@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialPredictionTime: .0299999993
-  ResetTrackerOnLoad: 1
+  ResetTrackerOnLoad: 0
 --- !u!114 &868961083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +586,10 @@ Prefab:
     - target: {fileID: 400002, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
+      propertyPath: ResetTrackerOnLoad
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
