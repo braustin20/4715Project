@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialPredictionTime: .0299999993
-  ResetTrackerOnLoad: 1
+  ResetTrackerOnLoad: 0
 --- !u!114 &81821396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,6 +1432,10 @@ Prefab:
     - target: {fileID: 11400016, guid: fb703216a8144f44184236ce68df3b47, type: 2}
       propertyPath: sensitivityX
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: fb703216a8144f44184236ce68df3b47, type: 2}
+      propertyPath: ResetTrackerOnLoad
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb703216a8144f44184236ce68df3b47, type: 2}
@@ -7367,7 +7371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialPredictionTime: .0299999993
-  ResetTrackerOnLoad: 1
+  ResetTrackerOnLoad: 0
 --- !u!1 &1238292522
 GameObject:
   m_ObjectHideFlags: 0
