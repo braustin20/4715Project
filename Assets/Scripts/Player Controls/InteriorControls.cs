@@ -101,6 +101,13 @@ public class InteriorControls : MonoBehaviour {
 					}
 				}
 			}
+			else{
+				if(Physics.Raycast(OVRCamera.transform.position, OVRCamera.transform.forward, out hit, 4.0f)){
+					if(hit.collider.gameObject.name == "EscapePod"){
+						Application.LoadLevel(Application.loadedLevel + 1);
+					}
+				}
+			}
 		}
 	}
 	void FixedUpdate() {

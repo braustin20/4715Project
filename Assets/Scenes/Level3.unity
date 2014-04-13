@@ -9011,6 +9011,18 @@ Prefab:
       propertyPath: m_Name
       value: EscapePod
       objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 8e65498e00881214ba050c2a8d19ef92, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 8e65498e00881214ba050c2a8d19ef92, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 8e65498e00881214ba050c2a8d19ef92, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e65498e00881214ba050c2a8d19ef92, type: 3}
   m_RootGameObject: {fileID: 1499570367}
