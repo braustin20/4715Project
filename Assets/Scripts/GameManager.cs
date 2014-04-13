@@ -6,9 +6,6 @@ public class GameManager : MonoBehaviour {
 	private GameObject OVRRightCamera;
 	private GameObject FPSCamera;
 
-	//Optional
-	private GameObject OVRHelmet;
-
 	public GameObject pauseMenu;
 	private GameObject spawnedMenu;
 
@@ -24,10 +21,6 @@ public class GameManager : MonoBehaviour {
 		OVRRightCamera = GameObject.Find("CameraRight");
 		FPSCamera = GameObject.Find("FPS Character");
 
-		if(Application.loadedLevel == 5){
-			OVRHelmet = GameObject.Find("OVRCameraHelmet");
-		}
-
 		//If this is a build of the game, hide and lock the cursor
 		if(Application.isPlaying || Application.isEditor){
 			Screen.showCursor = false;
@@ -36,9 +29,6 @@ public class GameManager : MonoBehaviour {
 		//If the OVR Camera is present, make sure it is disabled at the start
 		if(OVRCamera != null){
 			OVRCamera.SetActive(false);
-		}
-		if(OVRHelmet != null){
-			OVRHelmet.SetActive(false);
 		}
 
 		if(PlayerPrefs.GetInt("Oculus Enabled") == 1){
@@ -126,9 +116,6 @@ public class GameManager : MonoBehaviour {
 			if(OVRCamera.GetComponent<MouseLook>() != null){
 				OVRCamera.GetComponent<MouseLook>().enabled = false;
 			}
-			if(Application.loadedLevel == 5){
-				OVRHelmet.SetActive(false);
-			}
 			PlayerPrefs.SetInt("Oculus Enabled", 0);
 		}
 		else if(oculus == false){
@@ -138,9 +125,6 @@ public class GameManager : MonoBehaviour {
 			FPSCamera.gameObject.SetActive(false);
 			if(OVRCamera.GetComponent<MouseLook>() != null){
 				OVRCamera.GetComponent<MouseLook>().enabled = true;
-			}
-			if(Application.loadedLevel == 5){
-				OVRHelmet.SetActive(true);
 			}
 			PlayerPrefs.SetInt("Oculus Enabled", 1);
 		}

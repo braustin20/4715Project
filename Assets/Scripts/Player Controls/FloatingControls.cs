@@ -52,7 +52,6 @@ public class FloatingControls : MonoBehaviour {
 
 		//Before any Input is processed, check to see if Oculus is enabled
 		oculusEnabled = gameManager.isOculusEnabled();
-		Debug.Log (oculusEnabled);
 
 		if(oxygen/maxOxygen >= 0.5f){
 			oxygen -= Time.deltaTime;
